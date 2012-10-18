@@ -1,0 +1,132 @@
+html, body{
+	padding:0;
+	background:#F2F2F2;
+	z-index:0;
+}
+#masthead{
+	width:100%;
+	top:0;
+	left:0;	
+	position:fixed;
+}
+#masthead .background{
+	position:absolute;
+	height:50px;
+	width:100%;
+	background:#FAFAFA;
+	z-index:5;
+	box-shadow: 0 2px 2px hsla(211,79%,6%,.1),
+	              0 0 2px hsla(211,79%,6%,.15);
+	-webkit-box-shadow: 0 2px 2px hsla(211,79%,6%,.1),
+				  0 0 2px hsla(211,79%,6%,.15);
+	-moz-box-shadow: 0 2px 2px hsla(211,79%,6%,.1),
+				  0 0 2px hsla(211,79%,6%,.15);
+
+
+}
+#masthead .forground{
+	position:relative;
+	height:50px;
+	z-index:10;
+	width:400px;
+	margin:auto;
+}
+#masthead .forground ul{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+#masthead .forground ul li{
+	float:left;
+}
+#masthead .forground ul li a{
+	color:#333333;
+	text-decoration:none;
+	text-align:center;
+	padding-top:15px;
+	height:35px;
+	display:block;
+	width:100px;
+}
+#masthead .forground ul li a:hover{
+	box-shadow: inset 0 -3px 0 -1px #35A2FF;
+	-webkit-box-shadow: inset 0 -3px 0 -1px #35A2FF;
+	-moz-box-shadow: inset 0 -3px 0 -1px #35A2FF;
+}
+.current{
+	box-shadow: inset 0 -3px 0 -1px #35A2FF;
+	-webkit-box-shadow: inset 0 -3px 0 -1px #35A2FF;
+	-moz-box-shadow: inset 0 -3px 0 -1px #35A2FF;
+}
+#avatar img{
+	padding:5px;
+	background:#FFFFFF;
+	border:1px solid #DDDDDD;
+}
+#content{
+	margin:auto;
+	z-index:1;
+	width:800px;
+	text-align:left;
+}
+#container{
+	margin-top:100px;
+}
+.project-left{
+	margin-left:30px;
+	width:340px;
+}
+.project-right{
+	position:absolute;
+	margin-left:450px;
+	margin-top:-102px;
+	width:340px;
+}
+.project-icon{
+	border-radius:5px;
+	border:1px solid #727272;
+	width:100px;
+	height:100px;
+	padding:5px;
+	background:#DDDDDD;
+}
+.project-icon:hover{
+	box-shadow: 0px 0px 4px 2px #35A2FF;
+	-webkit-box-shadow:  0px 0px 4px 2px #35A2FF;
+	-moz-box-shadow:  0px 0px 4px 2px #35A2FF;
+}
+.project-name{
+	text-align:center;
+	margin-top:-100px;
+	margin-left:110px;
+}
+.project-name a{
+	font-size:24px;
+	color:#000000;
+	text-decoration:none;
+}
+.project-desc{
+	margin-top:10px;
+	margin-left:130px;
+}
+#contact{
+	margin:auto;
+	width:400px;
+}
+#contact form{
+	margin:10px;
+}
+#contact textarea{
+	margin-top:5px;
+	resize:none;
+	word-wrap:normal;
+	font-size:12px;
+	width:100%;
+	height:200px;
+}
+#contact button{
+	margin-top:10px;
+	margin-left:160px;
+	width:75px;
+	height:30px;
+}
