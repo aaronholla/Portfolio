@@ -3,48 +3,50 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 	<title>Aaron Holland</title>
 </head>
 <body>
 	<div id="masthead">
-		<div class="background"></div>
-		<div class="forground">
+		<div class="nav">
 			<ul>
 				<li><a href="/" class="current">Home</a></li>
-				<li><a href="/about">About Me</a></li>
-				<li><a href="/projects">Projects</a></li>
+				<li><a id="about">About Me</a></li>
 				<li><a href="/contact">Contact</a></li>
 			</ul>
 		</div>
 	</div>
 	<div id="content">
 		<div id="container">
-			<div class="project-left">
-			<div class="project-icon">
-			<a href="/resizeme"><img src="/img/ResizeMe-Icon.png" width="100px" height="100px"/></a>
+			<div class="taps">
+				<img src="/img/4s preview.png"width="30%"></img>
 			</div>
-			<div class="project-name">
-			<a href="/resizeme">Resize Me</a>
+			<div class="resizeme">
+				<img src="/img/resizeme2.png" width="100%"></img>
+				<img src="/img/resizeme.png" width="100%"></img>
 			</div>
-			<div class="project-desc">
-			<span>A Safari Extension that lets you resize your browser window with a single click.</span>
-			<a href="/resizeme">Learn More</a>
-			</div>
-			</div>
-			<div class="project-right">
-			<div class="project-icon">
-			<a href=""><img src="/img/SharkLogo.png" width="100px" height="100px"/></a>
-			</div>
-			<div class="project-name">
-			<a href="/resizeme">Robo-Sharks 1612</a>
-			</div>
-			<div class="project-desc">
-			<span>Custom website for the Robo-Sharks, FIRST Robotics Team 1612.</span>
-			<a href="/resizeme">Learn More</a>
-			<a href="http://therobosharks.com" target="_blank">Visit Website</a>
-			</div>
+			<div class="robotics">
+				<img src="/img/therobosharks.png" width="100%"></img>
 			</div>
 		</div>
 	</div>
+	
+<script>
+$(window).scroll(function() {
+	$("#about").html("About Me");
+});
+	
+$("#about").click(function() {
+	if($(".nav").height() == 200){
+		$(".nav").stop().animate({"height": "50px"}, 200);
+		$(".nav ul").stop().animate({"margin-top":"0px"}, 200);
+		$(this).html("About Me");
+	} else {
+		$(".nav").stop().animate({"height": "200px"}, 200);
+		$(".nav ul").stop().animate({"margin-top":"150px"}, 200);
+		$(this).html("Close");
+	}
+});
+</script>
 </body>
 </html>

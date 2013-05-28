@@ -1,7 +1,4 @@
 RewriteEngine on
-RewriteRule ^(.*)/$ /$1 [L,R=301]
 
-RewriteRule ^about$ about.htm$1
-RewriteRule ^projects$ projects.htm$1
 RewriteRule ^resizeme$ resizeme.htm$1
 RewriteRule ^contact$ contact.htm$1

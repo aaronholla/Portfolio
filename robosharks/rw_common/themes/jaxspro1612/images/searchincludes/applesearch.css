@@ -1,0 +1,34 @@
+li.last_menu {
+	margin-top: 7px;
+	margin-right: 5px;
+}
+
+#searchform {
+  background: url(search.png) no-repeat 0 -19px;
+	padding-left: 19px;
+	}
+	
+#searchform .sbox_r {
+  background: url(search.png) no-repeat right -19px;
+	float: left;
+	width: 19px;
+	height: 20px;
+	}
+	
+#searchform .sbox_r_f2 {
+  background: url(search.png) no-repeat right -39px;
+	float: left;
+	width: 19px;
+	height: 20px;
+	}
+	
+#searchform input {
+  background: url(search.png) repeat-x 0 1px;
+	float: left;
+	border: 0;
+	height: 15px; 
+	width: 132px;
+	padding: 3px;
+	font: 11px/13px arial;
+	color: #000;
+	}
