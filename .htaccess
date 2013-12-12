@@ -2,3 +2,7 @@ RewriteEngine on
 
 RewriteRule ^resizeme$ resizeme.htm$1
 RewriteRule ^contact$ contact.htm$1
+
+<IfModule mod_mime.c>
+ AddType application/x-safari-extension safariextz
+</IfModule>
