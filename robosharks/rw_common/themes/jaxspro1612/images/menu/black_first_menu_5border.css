@@ -1,0 +1,7 @@
+html>body #menu .menu_container {
+	background-image:url(black_first_menu_5border.png);
+}
+
+html>body .menu_end {
+	background-image:url(black_first_menu_5border_last.png);
+}

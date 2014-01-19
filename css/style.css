@@ -1,0 +1,153 @@
+html, body{
+	padding:0;
+	background:#F2F2F2;
+	z-index:0;
+	min-width:1280px;
+}
+h2{
+	text-align:center;
+}
+#content{
+	z-index:1;
+	margin-top:150px;
+	text-align:left;
+}
+#masthead{
+	width:100%;
+	min-width:320px;
+	top:0;
+	left:0;	
+	position:fixed;
+}
+#masthead .background{
+	position:absolute;
+	height:120px;
+	width:100%;
+	background:#FAFAFA;
+	z-index:5;
+	box-shadow: 0 2px 2px hsla(211,79%,6%,.1),
+	              0 0 2px hsla(211,79%,6%,.15);
+	-webkit-box-shadow: 0 2px 2px hsla(211,79%,6%,.1),
+				  0 0 2px hsla(211,79%,6%,.15);
+	-moz-box-shadow: 0 2px 2px hsla(211,79%,6%,.1),
+				  0 0 2px hsla(211,79%,6%,.15);
+
+
+}
+#avatar{
+	float:right;
+	margin-right:50px;
+}
+#avatar img{
+	padding:5px;
+	background:#FFFFFF;
+	border:1px solid #DDDDDD;
+}
+.aboutme{
+	padding-top:8px;
+	margin:auto;
+	width:500px;
+}
+#bio{
+	padding-top:20px;
+	margin-left:50px;
+	width:265px;
+	float:left;
+}
+#container{
+	padding-top:25px;
+	width:100%;
+}
+.taps{
+	max-width:1024px;
+	margin:auto;
+}
+.taps img{
+	margin-left:-100px;
+}
+#taps-details{
+	float:right;
+	padding-top:175px;
+	margin-right:250px;
+	width:200px;
+}
+.resizeme{
+	max-width:1024px;
+	margin:auto;
+	padding-bottom:150px;
+}
+.resizeme img{
+	float:right;
+}
+.robotics{
+	max-width:1024px;
+	margin:auto;
+	padding-bottom:50px;
+}
+#right{
+	float:right;
+	padding-top:75px;
+	margin-right:100px;
+	width:250px;
+}
+#left{
+	float:left;
+	padding-top:75px;
+	padding-bottom:250px;
+	margin-left:275px;
+	width:250px;
+}
+.robotics-button {
+	background: url(/img/robotics-button.jpg) ;
+	text-decoration:none;
+	text-align:center;
+	width:100px;
+	height:20px;
+	padding:8px 15px 3px 15px;
+	float:right;
+	margin-top:40px;
+	margin-right: 70px;
+	color:#FFFFFF;
+	font:normal 12px Arial,Helvetica,Sans-Serif;
+	text-shadow:0 -1px 0 rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-color: hsla(210,54%,20%,.15) hsla(210,54%,20%,.17) hsla(210,54%,20%,.2);
+	border-radius: 2.5px;
+}
+.robotics-button:hover {
+	background-color: #469638;
+	box-shadow: 0 0 1px 2px hsla(211,79%,6%,.05);
+	border-color: hsla(210,54%,20%,.15) hsla(210,54%,20%,.17) hsla(210,54%,20%,.2);
+}
+.robotics-button:hover:active {
+	box-shadow: 0 1px 1px hsla(211,79%,6%,.1) inset,
+	              0 0 1px hsla(211,79%,6%,.15) inset;
+}
+.resizeme-button {
+	background: url(/img/resizeme-button.jpg) ;
+	text-decoration:none;
+	text-align:center;
+	width:100px;
+	height:20px;
+	padding:8px 15px 3px 15px;
+	float:right;
+	margin-top:40px;
+	margin-right: 70px;
+	color:#FFFFFF;
+	font:normal 12px Arial,Helvetica,Sans-Serif;
+	text-shadow:0 -1px 0 rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-color: hsla(210,54%,20%,.15) hsla(210,54%,20%,.17) hsla(210,54%,20%,.2);
+	border-radius: 2.5px;
+}
+.resizeme-button:hover {
+	background-color: #469638;
+	box-shadow: 0 0 1px 2px hsla(211,79%,6%,.05);
+	border-color: hsla(210,54%,20%,.15) hsla(210,54%,20%,.17) hsla(210,54%,20%,.2);
+}
+.resizeme-button:hover:active {
+	box-shadow: 0 1px 1px hsla(211,79%,6%,.1) inset,
+	              0 0 1px hsla(211,79%,6%,.15) inset;
+}

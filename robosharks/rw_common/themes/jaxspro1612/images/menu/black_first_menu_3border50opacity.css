@@ -1,0 +1,9 @@
+html>body #menu .menu_container {
+	background-image:url(black_first_menu_3border50opacity.png);
+}
+
+html>body .menu_end {
+	background: url(black_first_menu_3border50opacity_last.png) no-repeat left center;
+}
+
+	.menu_end-moz-focus-inner { border: none;}
