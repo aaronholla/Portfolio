@@ -1,0 +1,135 @@
+html, body{
+	font-family: 'Open Sans', sans-serif;
+	padding:0;
+	background:#F2F2F2;
+	z-index:0;
+	min-width:1024px;
+	width: 100%;
+}
+h2{
+	text-align:center;
+}
+.content{
+	z-index:1;
+	margin-top:121px;
+	margin-left: -8px;
+}
+.container{
+	padding-top:25px;
+}
+.navbar{
+	width:100%;
+	min-width:320px;
+	top:0;
+	left:0;	
+	height:121px;
+	background:#2c3e50;
+	position:fixed;
+}
+.navbar ul li{
+	display: inline-block;
+}
+#avatar{
+	float:right;
+	margin-right:50px;
+}
+#avatar img{
+	padding:5px;
+	background:#FFFFFF;
+	border:1px solid #DDDDDD;
+}
+#aboutme{
+	background-color: #0ca3b9;
+	padding-top:8px;
+}
+#taps{
+	max-width:1024px;
+	margin:auto;
+}
+#taps img{
+	margin-left:-100px;
+}
+#taps-details{
+	float:right;
+	padding-top:175px;
+	margin-right:250px;
+	width:200px;
+}
+#resizeme{
+	max-width:1024px;
+	margin:auto;
+	padding-bottom:150px;
+}
+#resizeme img{
+	float:right;
+}
+#robotics{
+	background-color: #7f8c8d;
+}
+#right{
+	float:right;
+	padding-top:75px;
+	margin-right:100px;
+	width:250px;
+}
+#left{
+	float:left;
+	padding-top:75px;
+	padding-bottom:250px;
+	margin-left:275px;
+	width:250px;
+}
+.robotics-button {
+	background: url(/images/robotics-button.jpg) ;
+	text-decoration:none;
+	text-align:center;
+	width:100px;
+	height:20px;
+	padding:8px 15px 3px 15px;
+	float:right;
+	margin-top:40px;
+	margin-right: 70px;
+	color:#FFFFFF;
+	font:normal 12px Arial,Helvetica,Sans-Serif;
+	text-shadow:0 -1px 0 rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-color: hsla(210,54%,20%,.15) hsla(210,54%,20%,.17) hsla(210,54%,20%,.2);
+	border-radius: 2.5px;
+}
+.robotics-button:hover {
+	background-color: #469638;
+	box-shadow: 0 0 1px 2px hsla(211,79%,6%,.05);
+	border-color: hsla(210,54%,20%,.15) hsla(210,54%,20%,.17) hsla(210,54%,20%,.2);
+}
+.robotics-button:hover:active {
+	box-shadow: 0 1px 1px hsla(211,79%,6%,.1) inset,
+	              0 0 1px hsla(211,79%,6%,.15) inset;
+}
+.resizeme-button {
+	background: url(/images/resizeme-button.jpg) ;
+	text-decoration:none;
+	text-align:center;
+	width:100px;
+	height:20px;
+	padding:8px 15px 3px 15px;
+	float:right;
+	margin-top:40px;
+	margin-right: 70px;
+	color:#FFFFFF;
+	font:normal 12px Arial,Helvetica,Sans-Serif;
+	text-shadow:0 -1px 0 rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-color: hsla(210,54%,20%,.15) hsla(210,54%,20%,.17) hsla(210,54%,20%,.2);
+	border-radius: 2.5px;
+}
+.resizeme-button:hover {
+	background-color: #469638;
+	box-shadow: 0 0 1px 2px hsla(211,79%,6%,.05);
+	border-color: hsla(210,54%,20%,.15) hsla(210,54%,20%,.17) hsla(210,54%,20%,.2);
+}
+.resizeme-button:hover:active {
+	box-shadow: 0 1px 1px hsla(211,79%,6%,.1) inset,
+	              0 0 1px hsla(211,79%,6%,.15) inset;
+}
