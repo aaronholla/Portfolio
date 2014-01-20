@@ -65,16 +65,23 @@ h2{
 }
 #avatar{
 	float:right;
-	margin-right:50px;
-}
-#avatar img{
-	padding:5px;
-	background:#FFFFFF;
-	border:1px solid #DDDDDD;
+	margin-top:75px;
+	width: 350px;
+	height: 350px;
+	background-image: url('/images/Avatar.png');
+	background-size: cover;
+	border-radius: 175px;
+ 	-webkit-border-radius: 175px;
+ 	-moz-border-radius: 175px;
 }
 #about{
 	background-color: #0ca3b9;
 	padding-top:8px;
+	color: #ffffff;
+}
+#about h1{
+	font-family: 'Open Sans Bold', sans-serif;
+	font-size: 28;
 }
 #taps{
 	
