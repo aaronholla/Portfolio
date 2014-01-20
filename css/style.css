@@ -22,7 +22,6 @@ h2{
 }
 .navbar{
 	width:100%;
-	min-width:320px;
 	top:0;
 	left:0;	
 	height:75px;
@@ -54,6 +53,16 @@ h2{
 .navbar ul > li > a.current{
 	color: #0ca3b9;
 }
+.footer{
+	width:960px;
+	margin: auto;
+	height: 71px;
+	background:#2c3e50;
+}
+.footer a{
+	text-decoration: none;
+	color: #0ca3b9;
+}
 #avatar{
 	float:right;
 	margin-right:50px;
@@ -63,7 +72,7 @@ h2{
 	background:#FFFFFF;
 	border:1px solid #DDDDDD;
 }
-#aboutme{
+#about{
 	background-color: #0ca3b9;
 	padding-top:8px;
 }
@@ -72,12 +81,6 @@ h2{
 }
 #taps img{
 	margin-left:-100px;
-}
-#taps-details{
-	float:right;
-	padding-top:175px;
-	margin-right:250px;
-	width:200px;
 }
 #resizeme{
 	padding-bottom:150px;
@@ -88,6 +91,7 @@ h2{
 #robotics{
 }
 #contact{
+	margin-bottom: -71px;
 	background-color: #16a085;
 }
 #right{
