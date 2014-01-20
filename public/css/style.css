@@ -1,9 +1,9 @@
 html, body{
 	font-family: 'Open Sans', sans-serif;
 	padding:0;
+	margin: 0;
 	background:#F2F2F2;
 	z-index:0;
-	min-width:1024px;
 	width: 100%;
 }
 h2{
@@ -11,23 +11,48 @@ h2{
 }
 .content{
 	z-index:1;
-	margin-top:121px;
-	margin-left: -8px;
+	margin-top:105px;
 }
 .container{
-	padding-top:25px;
+	width:950px;
+	margin: auto;
+}
+.section{
+	height: 650px;
 }
 .navbar{
 	width:100%;
 	min-width:320px;
 	top:0;
 	left:0;	
-	height:121px;
+	height:75px;
 	background:#2c3e50;
 	position:fixed;
+	padding-top: 30px;
 }
-.navbar ul li{
+.navbar a{
+	text-decoration: none;
+	color: #0ca3b9;
+}
+.navbar-left{
+	float: left;
+	font-family: 'Open Sans Bold', sans-serif;
+	font-size: 32px;
+}
+.navbar-right{
+	float: right;
+	font-family: 'Open Sans Semibold', sans-serif;
+	font-size: 16px;
+}
+.navbar ul > li{
 	display: inline-block;
+	padding-right: 15px;
+}
+.navbar ul > li > a{
+	color: #ffffff;
+}
+.navbar ul > li > a.current{
+	color: #0ca3b9;
 }
 #avatar{
 	float:right;
@@ -43,8 +68,7 @@ h2{
 	padding-top:8px;
 }
 #taps{
-	max-width:1024px;
-	margin:auto;
+	
 }
 #taps img{
 	margin-left:-100px;
@@ -56,9 +80,8 @@ h2{
 	width:200px;
 }
 #resizeme{
-	max-width:1024px;
-	margin:auto;
 	padding-bottom:150px;
+	background-color: #16a085;
 }
 #resizeme img{
 	float:right;
