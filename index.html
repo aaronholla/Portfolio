@@ -5,6 +5,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="/css/style.css" />
 	<title>Aaron Holland</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/javascript.js"></script>
 </head>
 <body>
 	<div class="navbar">
@@ -14,9 +16,9 @@
 			</div>
 			<div class="navbar-right">
 				<ul>
-					<li><a href="#" class="current">About Me</a></li>
-					<li><a href="#">Projects</a></li>
-					<li><a href="#">Contact Me</a></li>
+					<li><a href="#about" id="nav-about">About Me</a></li>
+					<li><a href="#projects" id="nav-projects">Projects</a></li>
+					<li><a href="#contact" id="nav-contact">Contact Me</a></li>
 				</ul>
 			</div>
 		</div>
@@ -26,7 +28,10 @@
 			<div class="container">
 				<h1>About Me</h1>
 				<a>My name is Aaron Holland, I am a Web Developer.</a>
-				<div id="avatar"></div>
+				<div>
+					<div id="avatar"></div>
+					<canvas id="chart" width="460" height="460"></canvas>
+				</div>
 				<div id="skills">
 					<div>
 						<p>Front End</p>
