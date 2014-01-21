@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="/css/style.css" />
 	<title>Aaron Holland</title>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="js/javascript.js"></script>
+	<script src="/js/jquery.bxslider.min.js"></script>
+	<link href="/css/jquery.bxslider.css" rel="stylesheet" />
+	<script src="/js/javascript.js"></script>
 </head>
 <body>
 	<div class="navbar">
@@ -16,7 +18,7 @@
 			</div>
 			<div class="navbar-right">
 				<ul>
-					<li><a href="#about" id="nav-about">About Me</a></li>
+					<li><a href="#about" id="nav-about" class="current">About Me</a></li>
 					<li><a href="#projects" id="nav-projects">Projects</a></li>
 					<li><a href="#contact" id="nav-contact">Contact Me</a></li>
 				</ul>
@@ -33,19 +35,19 @@
 					<canvas id="chart" width="460" height="460"></canvas>
 				</div>
 				<div id="skills">
-					<div>
+					<div class="skills-section">
 						<p>Front End</p>
 						<div class="skillbar"><div id="skill1"><span>HTML5</span></div></div>
 						<div class="skillbar"><div id="skill2"><span>CSS3</span></div></div>
 						<div class="skillbar"><div id="skill3"><span>Javascript</span></div></div>
 					</div>
-					<div>
+					<div class="skills-section">
 						<p>Back End</p>
 						<div class="skillbar2"><div id="skill1"><span>PHP</span></div></div>
 						<div class="skillbar2"><div id="skill2"><span>Ruby</span></div></div>
 						<div class="skillbar2"><div id="skill3"><span>Wordpress</span></div></div>
 					</div>
-					<div>
+					<div class="skills-section">
 						<p>Other</p>
 						<div class="skillbar3"><div id="skill1"><span>Git</span></div></div>
 						<div class="skillbar3"><div id="skill2"><span>MySql</span></div></div>
@@ -55,20 +57,20 @@
 			</div>
 		</div>
 		<div id="projects">
-			<div class="section" id="robotics">
-				<div class="container">
-					<img src="/images/therobosharks.png" alt="The Robo-Sharks" width="600" />
-					<div id="right"><h2>TheRoboSharks.com</h2><a>I completely redesigned the robotics teams website when I was on the team. The site has since been taken down but you can view this amazing website using my archived version here.</a><a class="robotics-button" target="_blank" href="http://robotics.aaronholla.com">View Archive</a></div>
-				</div>
+			<div class="container">
+				<h1>My Projects</h1>
+				<a>I have many projects here are a few of my favorites.</a>
 			</div>
-			<div class="section" id="resizeme">
-				<div class="container">
-					<div id="left"><h2>ResizeMe</h2><a>ResizeMe is a Safari extension that adds a toolbar to allow you to resize the Safari window to six different sizes, including full screen. Resize your safari window to any size you want with just a single click!</a><a class="resizeme-button" href="/download/ResizeMe.safariextz.zip">Download</a></div>
+			<div class="slider">
+				<div id="robotics">
+					<img src="/images/therobosharks.png" alt="The Robo-Sharks" width="600" />
+					<h2>TheRoboSharks.com</h2><a>I completely redesigned the robotics teams website when I was on the team. The site has since been taken down but you can view this amazing website using my archived version here.</a><a class="robotics-button" target="_blank" href="http://robotics.aaronholla.com">View Archive</a>
+				</div>
+				<div id="resizeme">
+					<h2>ResizeMe</h2><a>ResizeMe is a Safari extension that adds a toolbar to allow you to resize the Safari window to six different sizes, including full screen. Resize your safari window to any size you want with just a single click!</a><a class="resizeme-button" href="/download/ResizeMe.safariextz.zip">Download</a>
 					<img src="/images/resizeme.png" alt="Resize Me" width="600" />
 				</div>
-			</div>
-			<div class="section" id="taps">
-				<div class="container">
+				<div id="taps">
 					<img src="/images/4s%20preview.png" alt="iPhone 4s" width="250" />
 					<h2>Work in Progress</h2><a>This is a secret iPhone App that I am currently developing.</a>
 				</div>
@@ -76,6 +78,8 @@
 		</div>
 		<div class="section" id="contact">
 			<div class="container">
+				<h1>Contact Me</h1>
+				<a>Feel free to contact me about anything.</a>
 				<form action="/contact" method="post">
 				  <label>Your Name:</label>
 					  <input type="text" name="name">

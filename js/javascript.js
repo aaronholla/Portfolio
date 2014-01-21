@@ -46,6 +46,13 @@ $(document).ready(function () {
     }
 
     var myPie = new Chart(document.getElementById("chart").getContext("2d")).Doughnut(pieData,options);
+
+     $('.slider').bxSlider({
+        slideMargin: 25,
+        auto: true,
+        infiniteLoop: true,
+        controls: true
+      });
 });
 
 /*!
