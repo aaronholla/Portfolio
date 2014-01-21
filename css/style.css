@@ -2,7 +2,7 @@ html, body{
 	font-family: 'Open Sans', sans-serif;
 	padding:0;
 	margin: 0;
-	background:#F2F2F2;
+	background:#dae4e5;
 	z-index:0;
 	width: 100%;
 }
@@ -63,8 +63,12 @@ h2{
 	text-decoration: none;
 	color: #0ca3b9;
 }
+#skills{
+	float: right;
+	margin-top:-420px;
+	margin-right: 50px;
+}
 #avatar{
-	float:right;
 	margin-top:75px;
 	width: 350px;
 	height: 350px;
@@ -84,7 +88,7 @@ h2{
 	font-size: 28;
 }
 .skillbar{
-	background-color: #888e8f;
+	background-color: #aab1b3;
 	width: 305px;
 	height: 28px;
 	margin-bottom: 10px;
@@ -93,7 +97,7 @@ h2{
 .skillbar > div{
 	height: 26px;
 	margin-left: 2px;
-	background-color: #16a085;
+	background-color: #0abc73;
 }
 .skillbar > div > span{
 	margin-left: 20px;
@@ -108,7 +112,7 @@ h2{
 	width: 60%;
 }
 .skillbar2{
-	background-color: #8d9394;
+	background-color: #aab1b3;
 	width: 305px;
 	height: 28px;
 	margin-bottom: 10px;
@@ -132,7 +136,7 @@ h2{
 	width: 60%;
 }
 .skillbar3{
-	background-color: #919899;
+	background-color: #aab1b3;
 	width: 305px;
 	height: 28px;
 	margin-bottom: 10px;
@@ -141,7 +145,7 @@ h2{
 .skillbar3 > div{
 	height: 26px;
 	margin-left: 2px;
-	background-color: #b86f9c;
+	background-color: #d982b8;
 }
 .skillbar3 > div > span{
 	margin-left: 20px;
@@ -171,7 +175,7 @@ h2{
 }
 #contact{
 	margin-bottom: -71px;
-	background-color: #16a085;
+	background-color: #0abc73;
 }
 #right{
 	float:right;
