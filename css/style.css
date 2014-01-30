@@ -10,6 +10,13 @@ html, body{
 h2{
 	text-align:center;
 }
+#projects{
+	overflow: hidden;
+	max-width: 100%;
+}
+.navbar{
+	width: 100%;
+}
 .content{
 	z-index:1;
 	margin-top:75px;
@@ -238,7 +245,6 @@ h2{
 	padding:8px 15px 3px 15px;
 	float:right;
 	margin-top:40px;
-	margin-right: 70px;
 	color:#FFFFFF;
 	font:normal 12px Arial,Helvetica,Sans-Serif;
 	text-shadow:0 -1px 0 rgba(0, 0, 0, 0.2);
