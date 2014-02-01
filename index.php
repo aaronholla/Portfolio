@@ -119,8 +119,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 				<h1>Contact Me</h1>
 				<a>Feel free to contact me about anything.</a>
 				<ul id="contact-links">
-					<li><a class="social-button" href=""><i class="fa fa-github fa-2x pull-left"></i> View on GitHub</a></li>
-					<li><a class="social-button" href=""><i class="fa fa-twitter fa-2x pull-left"></i> Follow on Twitter</a></li>
+					<li><a class="social-button" href="https://github.com/aaronholla/Portfolio"><i class="fa fa-github fa-2x pull-left"></i> View on GitHub</a></li>
+					<li><a class="social-button" href="https://twitter.com/aaronholla_"><i class="fa fa-twitter fa-2x pull-left"></i> Follow on Twitter</a></li>
 					<li><a href="http://referrals.trhou.se/aaronholland" target="_blank"><img src="/images/treehouse.png"/></a></li>
 				</ul>
 				<form action="" method="post">
@@ -132,9 +132,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 				</form>
 			</div>
 		</div>
-	</div>
-	<div class="footer">
-		<a href="">Back to Top</a>
 	</div>
 </body>
 </html>
