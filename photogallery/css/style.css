@@ -1,0 +1,54 @@
+body, html{
+	margin: 0;
+	background: #FAFAFA;
+}
+.gallery{
+	height: 100%;
+	display: block;
+}
+.image-container{
+	margin-bottom: -5px;
+	overflow: hidden;
+}
+img{
+	width: 100%;
+}
+
+@media screen and (min-width:30em) {
+    
+}
+
+@media screen and (min-width:33em) {
+   
+}
+
+@media screen and (min-width:40em) {
+   
+}
+
+@media screen and (min-width:48em) {
+	.image-container{
+		width: 100%;
+		height: 250px;
+	}
+	.current{
+		margin-bottom: -10px;
+		height: auto;
+	}
+	.current img{
+		top:0;
+	}
+	img:hover{
+		cursor: pointer;
+	}
+	img{
+		position: relative;
+		top:-125px; 
+	}
+}
+@media screen and (min-width:56em) {
+
+}
+@media screen and (min-width:72em) {
+
+}

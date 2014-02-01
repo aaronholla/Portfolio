@@ -108,7 +108,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 				<div id="photogallery">
 					<div class="container">
 						<!-- <img src="/images/4s%20preview.png" alt="iPhone 4s" width="250" /> -->
-						<div class="desc-right"><h2>Work in Progress</h2><a>This is a secret iPhone App that I am currently developing.</a></div>
+						<div class="desc-right"><h2>Photo Gallery</h2><a>This is a photo gallery that I built from scratch. It is fully responsive and will look perfect on any device. Not only that but it will automatically load any images that are inside the images folder.</a><a class="robotics-button" target="_blank" href="/photogallery">View Demo</a></div>
 					</div>
 				</div>
 			</div>
