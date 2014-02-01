@@ -35,6 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<title>Aaron Holland</title>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="/js/jquery.bxslider.min.js"></script>
@@ -117,7 +118,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 			<div class="container">
 				<h1>Contact Me</h1>
 				<a>Feel free to contact me about anything.</a>
-				<div id="contact-links"><a href="http://referrals.trhou.se/aaronholland" target="_blank"><img src="/images/treehouse.png"/></a></div>
+				<ul id="contact-links">
+					<li><a class="social-button" href=""><i class="fa fa-github fa-2x pull-left"></i> View on GitHub</a></li>
+					<li><a class="social-button" href=""><i class="fa fa-twitter fa-2x pull-left"></i> Follow on Twitter</a></li>
+					<li><a href="http://referrals.trhou.se/aaronholland" target="_blank"><img src="/images/treehouse.png"/></a></li>
+				</ul>
 				<form action="" method="post">
 					<input type="text" name="name" placeholder="Your Name">
 				  	<input type="text" name="email" placeholder="Your Email">

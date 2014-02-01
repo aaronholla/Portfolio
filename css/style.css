@@ -223,15 +223,12 @@ h2{
 	width:300px;
 	margin-right: 50px;
 }
-#contact-links{
-	float: right;
-}
 #contact{
 	margin-bottom: -71px;
 	background-color: #0abc73;
 }
 #contact form{
-	margin-top: 75px;
+	margin: 75px 0 0 0px;
 	width: 410px;
 }
 #contact input{
@@ -256,6 +253,48 @@ h2{
 	cursor: pointer;
 	background:#2c3e50;
 	color: #ffffff;
+}
+#contact-links{
+	float: right;
+	display: block;
+	list-style-type: none;
+	text-align: center;
+	width: 195px;
+	margin-top: 100px;
+	margin-right: 130px;
+}
+#contact-links a{
+	margin-bottom: 20px;
+	width: 200px;
+}
+.social-button i{
+	margin-top: -5px;
+}
+.social-button {
+	/*background: url(/images/robotics-button.jpg) ;*/
+	background-color: #0ca3b9;
+	text-decoration:none;
+	text-align:center;
+	width:200px;
+	height:35px;
+	float:left;
+	padding: 15px 10px 0px;
+	color:#dae4e5;
+	font:normal 16px Arial,Helvetica,Sans-Serif;
+	text-shadow:0 -1px 0 rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-color: hsla(210,54%,20%,.15) hsla(210,54%,20%,.17) hsla(210,54%,20%,.2);
+	border-radius: 2.5px;
+}
+.social-button:hover {
+	/*background-color: #469638;*/
+	box-shadow: 0 0 1px 2px hsla(211,79%,6%,.05);
+	border-color: hsla(210,54%,20%,.15) hsla(210,54%,20%,.17) hsla(210,54%,20%,.2);
+}
+.social-button:hover:active {
+	box-shadow: 0 1px 1px hsla(211,79%,6%,.1) inset,
+	              0 0 1px hsla(211,79%,6%,.15) inset;
 }
 .robotics-button {
 	background: url(/images/robotics-button.jpg) ;
