@@ -1,3 +1,33 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST"){
+	$name = trim($_POST['name']);
+	$email = trim($_POST['email']);
+	$message = trim($_POST['message']);
+
+	if ($name == "" OR $email == "" OR $message == "") {
+		echo "All fields are required.";
+		exit;
+	}
+
+	foreach ($_POST as $value) {
+		if( stripos($value, 'Content-Type:') !== FALSE){
+			exit;
+		}
+	}
+
+	if ($_POST['address'] != ""){
+		exit;
+	}
+
+	$headers = "From: " . $email;
+	$subject = $name . " - Portfolio Contact Form";
+
+	mail('aaronholla@gmail.com', $subject, $message, $headers);
+
+	header('Location: contact.php');
+	exit;
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -56,23 +86,29 @@
 				</div>
 			</div>
 		</div>
-		<div id="projects">
+		<div class="section" id="projects">
 			<div class="container">
 				<h1>My Projects</h1>
 				<a>I have many projects here are a few of my favorites.</a>
 			</div>
 			<div class="slider">
 				<div id="robotics">
-					<img src="/images/therobosharks.png" alt="The Robo-Sharks" width="600" />
-					<h2>TheRoboSharks.com</h2><a>I completely redesigned the robotics teams website when I was on the team. The site has since been taken down but you can view this amazing website using my archived version here.</a><a class="robotics-button" target="_blank" href="http://robotics.aaronholla.com">View Archive</a>
+					<div class="container">
+						<img src="/images/therobosharks.png" alt="The Robo-Sharks" width="600" />
+						<div class="desc-right"><h2>TheRoboSharks.com</h2><a>I completely redesigned the robotics teams website when I was on the team. The site has since been taken down but you can view this amazing website using my archived version here.</a><a class="robotics-button" target="_blank" href="/robosharks">View Archive</a></div>
+					</div>
 				</div>
 				<div id="resizeme">
-					<h2>ResizeMe</h2><a>ResizeMe is a Safari extension that adds a toolbar to allow you to resize the Safari window to six different sizes, including full screen. Resize your safari window to any size you want with just a single click!</a><a class="resizeme-button" href="/download/ResizeMe.safariextz.zip">Download</a>
-					<img src="/images/resizeme.png" alt="Resize Me" width="600" />
+					<div class="container">
+						<div class="desc-left"><h2>ResizeMe</h2><a>ResizeMe is a Safari extension that adds a toolbar to allow you to resize the Safari window to six different sizes, including full screen. Resize your safari window to any size you want with just a single click!</a><a class="resizeme-button" href="/download/ResizeMe.safariextz.zip">Download</a></div>
+						<img src="/images/resizeme.png" alt="Resize Me" width="600" />
+					</div>
 				</div>
-				<div id="taps">
-					<img src="/images/4s%20preview.png" alt="iPhone 4s" width="250" />
-					<h2>Work in Progress</h2><a>This is a secret iPhone App that I am currently developing.</a>
+				<div id="photogallery">
+					<div class="container">
+						<!-- <img src="/images/4s%20preview.png" alt="iPhone 4s" width="250" /> -->
+						<div class="desc-right"><h2>Work in Progress</h2><a>This is a secret iPhone App that I am currently developing.</a></div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -81,14 +117,12 @@
 				<h1>Contact Me</h1>
 				<a>Feel free to contact me about anything.</a>
 				<div><a href="http://referrals.trhou.se/aaronholland" target="_blank"><img src="/images/treehouse.png"/></a></div>
-				<form action="/contact" method="post">
-				  <label>Your Name:</label>
-					  <input type="text" name="name">
-				  <label>Your email address:</label>
-				  <input type="text" name="email">
-				  <label>Your message:</label>
-				  <textarea name="message" rows="16" cols="28"></textarea>
-				  <input type="submit" value="Send">
+				<form action="" method="post">
+					<input type="text" name="name" placeholder="Your Name">
+				  	<input type="text" name="email" placeholder="Your Email">
+				  	<input type="text" name="address" placeholder="Please Leave Blank." style="display:none;">
+				 	<textarea name="message" rows="16" cols="28" placeholder="Have a question for me?"></textarea>
+				  	<input type="submit" value="Send">
 				</form>
 			</div>
 		</div>

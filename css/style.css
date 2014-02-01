@@ -192,19 +192,38 @@ h2{
 .skillbar3 > #skill3{
 	width: 45%;
 }
-#taps{
-	
+#robotics{
+	min-width: 950px;
 }
-#taps img{
+#robotics img{
+	width:600px;
+	display: inline;
 }
 #resizeme{
+	min-width: 950px;
 }
 #resizeme img{
-	float:right;
+	width:600px;
+	display: inline;
 }
-#robotics{
-	height: 400px;
+#photogallery{
+	min-width: 950px;
 }
+#photogallery img{
+	width:600px;
+	display: inline;
+}
+.desc-right{
+	float: right;
+	width:300px;
+	margin-left: 50px;
+}
+.desc-left{
+	float: left;
+	width:300px;
+	margin-right: 50px;
+}
+
 #contact{
 	margin-bottom: -71px;
 	background-color: #0abc73;
