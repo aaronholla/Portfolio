@@ -223,10 +223,39 @@ h2{
 	width:300px;
 	margin-right: 50px;
 }
-
+#contact-links{
+	float: right;
+}
 #contact{
 	margin-bottom: -71px;
 	background-color: #0abc73;
+}
+#contact form{
+	margin-top: 75px;
+	width: 410px;
+}
+#contact input{
+	display: block;
+	height: 25px;
+}
+#contact input, textarea{
+	border-radius:5px;
+	border:none;
+	padding-left: 10px;
+	width: 400px;
+	margin-bottom: 15px;
+}
+#contact textarea{
+	resize: none;
+	height: 200px;
+	padding: 10px 5px;
+}
+#contact #submit{
+	float: right;
+	width: 85px;
+	cursor: pointer;
+	background:#2c3e50;
+	color: #ffffff;
 }
 .robotics-button {
 	background: url(/images/robotics-button.jpg) ;

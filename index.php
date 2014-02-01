@@ -5,7 +5,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	$message = trim($_POST['message']);
 
 	if ($name == "" OR $email == "" OR $message == "") {
-		echo "All fields are required.";
+		//echo "All fields are required.";
+		header('Location: contact.php');
 		exit;
 	}
 
@@ -116,13 +117,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 			<div class="container">
 				<h1>Contact Me</h1>
 				<a>Feel free to contact me about anything.</a>
-				<div><a href="http://referrals.trhou.se/aaronholland" target="_blank"><img src="/images/treehouse.png"/></a></div>
+				<div id="contact-links"><a href="http://referrals.trhou.se/aaronholland" target="_blank"><img src="/images/treehouse.png"/></a></div>
 				<form action="" method="post">
 					<input type="text" name="name" placeholder="Your Name">
 				  	<input type="text" name="email" placeholder="Your Email">
 				  	<input type="text" name="address" placeholder="Please Leave Blank." style="display:none;">
 				 	<textarea name="message" rows="16" cols="28" placeholder="Have a question for me?"></textarea>
-				  	<input type="submit" value="Send">
+				  	<input type="submit" id="submit" value="Send">
 				</form>
 			</div>
 		</div>
