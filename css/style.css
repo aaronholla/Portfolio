@@ -214,12 +214,14 @@ h2{
 	margin-right: 50px;
 }
 #contact{
+	margin-top: 55px;
+	padding-top: 25px;
+	height: 650px;
 	color: #ffffff;
-	margin-bottom: -71px;
 	background-color: #0abc73;
 }
 #contact form{
-	margin: 75px 0 0 0px;
+	margin: 125px 0 0 0px;
 	width: 410px;
 }
 #contact input{
@@ -251,7 +253,7 @@ h2{
 	list-style-type: none;
 	text-align: center;
 	width: 195px;
-	margin-top: 100px;
+	margin-top: 150px;
 	margin-right: 130px;
 }
 #contact-links a{
