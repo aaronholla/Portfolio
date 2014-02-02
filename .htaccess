@@ -1,8 +1,5 @@
 RewriteEngine on
 
-Order deny,allow
-Deny from all
-
 <IfModule mod_mime.c>
  AddType application/x-safari-extension safariextz
 </IfModule>
