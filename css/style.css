@@ -11,7 +11,6 @@ h2{
 	text-align:center;
 }
 #projects{
-	overflow: hidden;
 	max-width: 100%;
 }
 .navbar{
@@ -186,37 +185,47 @@ h2{
 	min-width: 950px;
 }
 #robotics img{
-	width:600px;
+	width:500px;
 	display: inline;
+	margin-top: 25px;
+	margin-left: 25px;
+	box-shadow: 0 0 18px 8px hsla(211,79%,6%,0.4);
 }
 #resizeme{
 	min-width: 950px;
+	height: 500px;
 }
 #resizeme img{
-	width:600px;
+	width:500px;
 	display: inline;
+	float: right;
+	margin-top: 25px;
+	box-shadow: 0 0 18px 8px hsla(211,79%,6%,0.4);
 }
 #photogallery{
 	min-width: 950px;
 }
 #photogallery img{
+	margin-top: 50px;
 	width:600px;
 	display: inline;
+	box-shadow: 0 0 18px 8px hsla(211,79%,6%,0.4);
 }
 .desc-right{
 	float: right;
 	width:300px;
-	margin-left: 50px;
+	margin-top: 25px;
+	text-align: center;
 }
 .desc-left{
 	float: left;
 	width:300px;
-	margin-right: 50px;
+	margin-top: 25px;
+	text-align: center;
 }
 #contact{
 	margin-top: 55px;
 	padding-top: 25px;
-	height: 650px;
 	color: #ffffff;
 	background-color: #0abc73;
 }
@@ -297,8 +306,8 @@ h2{
 	height:20px;
 	padding:8px 15px 3px 15px;
 	float:right;
-	margin-top:40px;
-	margin-right: 70px;
+	margin-top:45px;
+	margin-right: 90px;
 	color:#FFFFFF;
 	font:normal 12px Arial,Helvetica,Sans-Serif;
 	text-shadow:0 -1px 0 rgba(0, 0, 0, 0.2);
@@ -323,8 +332,9 @@ h2{
 	width:100px;
 	height:20px;
 	padding:8px 15px 3px 15px;
-	float:right;
-	margin-top:40px;
+	margin-top:45px;
+	margin-left: -110px;
+	position: absolute;
 	color:#FFFFFF;
 	font:normal 12px Arial,Helvetica,Sans-Serif;
 	text-shadow:0 -1px 0 rgba(0, 0, 0, 0.2);
