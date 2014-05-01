@@ -94,6 +94,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 				<a>I have many projects here are a few of my favorites.</a>
 			</div>
 			<div class="slider">
+				<div id="binofparts">
+					<div class="container">
+						<div class="desc-left"><h2>Bin of Parts</h2><a>A non-profit I founded to help US FIRST Robotics teams to find the things that they need.</a><a class="resizeme-button" href="https://binofparts.com">View Site</a></div>
+						<img src="/images/binofparts.png" alt="Bin of Parts" />
+					</div>
+				</div>
 				<div id="robotics">
 					<div class="container">
 						<img src="/images/robosharks.png" alt="The Robo-Sharks"  />
