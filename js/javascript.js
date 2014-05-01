@@ -47,12 +47,11 @@ $(document).ready(function () {
 
     var myPie = new Chart(document.getElementById("chart").getContext("2d")).Doughnut(pieData,options);
 
-    var slider = $('.slider').bxSlider({
+    $('.slider').bxSlider({
         auto: true,
-        infiniteLoop: true
-    });
-    $(".slider div").click(function(){
-        slider.startAuto();
+        infiniteLoop: true,
+        pause: 7000,
+        speed: 1000
     });
 });
 
