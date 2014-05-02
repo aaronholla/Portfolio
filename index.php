@@ -59,8 +59,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	<div class="content">
 		<div class="project-links">
 			<ul>
-				<li><a href=""><img src="/images/SharkLogo.png" height="150"></a></li>
-				<li><a href=""><img src="/images/ResizeMe-Icon.png" height="140"></a></li>
+				<li><a href=""><img src="/images/SharkLogo.png"></a></li>
+				<li><a href=""><img src="/images/ResizeMe-Icon.png"></a></li>
+				<li><a href=""><img src="/images/ResizeMe-Icon.png"></a></li>
+				<li><a href=""><img src="/images/ResizeMe-Icon.png"></a></li>
 			</ul>
 		</div>
 		<div class="section" id="projects">
