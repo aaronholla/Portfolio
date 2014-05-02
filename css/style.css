@@ -3,22 +3,25 @@ html, body{
 	font-weight: 400;
 	padding:0;
 	margin: 0;
-	background:#dae4e5;
+	background:#FAFAFA;
 	z-index:0;
 	width: 100%;
 }
 h2{
 	text-align:center;
 }
-#projects{
-	max-width: 100%;
+.fa-github{
+	color: #666666;
 }
-.navbar{
-	width: 100%;
+.fa-twitter{
+	color: #469be0;
+}
+.fa-envelope-o{
+	color: #666666;
 }
 .content{
 	z-index:1;
-	margin-top:75px;
+	margin-top:500px;
 }
 .container{
 	width:950px;
@@ -31,41 +34,30 @@ h2{
 	width:100%;
 	top:0;
 	left:0;	
-	height:60px;
-	background:#2c3e50;
+	border-bottom: 1px solid #333333;
+	height:500px;
 	position:fixed;
-	padding-top: 15px;
 	z-index: 100;
 }
-.navbar a{
-	text-decoration: none;
-	color: #0ca3b9;
+.navbar > .holder{
+	width: 140px;
+	margin: auto;
 }
-.navbar-left{
-	float: left;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 32px;
-	font-weight: 700;
-}
-.navbar-right{
-	float: right;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-}
-.navbar ul > li{
+.social-links > li{
 	display: inline-block;
-	padding-right: 15px;
 }
-.navbar ul > li > a{
-	color: #ffffff;
+.project-links{
+	width: 100%;
+	margin: auto;
 }
-.navbar ul > li > a.current{
-	color: #0ca3b9;
+.project-links > ul{
+	width: 800px;
 }
-#chart{
-	margin-top:50px;
-	margin-left: 6px;
+.project-links > ul > li{
+	display: inline-block;
+}
+.project-links > ul > li > a{
+	width: 50px;
 }
 #avatar{
 	position: absolute;
@@ -265,48 +257,6 @@ h2{
 	cursor: pointer;
 	background:#2c3e50;
 	color: #ffffff;
-}
-#contact-links{
-	float: right;
-	display: block;
-	list-style-type: none;
-	text-align: center;
-	width: 195px;
-	margin-top: 150px;
-	margin-right: 130px;
-}
-#contact-links a{
-	margin-bottom: 20px;
-	width: 200px;
-}
-.social-button i{
-	margin-top: -5px;
-}
-.social-button {
-	/*background: url(/images/robotics-button.jpg) ;*/
-	background-color: #0ca3b9;
-	text-decoration:none;
-	text-align:center;
-	width:200px;
-	height:35px;
-	float:left;
-	padding: 15px 10px 0px;
-	color:#dae4e5;
-	font:normal 16px Arial,Helvetica,Sans-Serif;
-	text-shadow:0 -1px 0 rgba(0, 0, 0, 0.2);
-	cursor: pointer;
-	border: 1px solid transparent;
-	border-color: hsla(210,54%,20%,.15) hsla(210,54%,20%,.17) hsla(210,54%,20%,.2);
-	border-radius: 2.5px;
-}
-.social-button:hover {
-	/*background-color: #469638;*/
-	box-shadow: 0 0 1px 2px hsla(211,79%,6%,.05);
-	border-color: hsla(210,54%,20%,.15) hsla(210,54%,20%,.17) hsla(210,54%,20%,.2);
-}
-.social-button:hover:active {
-	box-shadow: 0 1px 1px hsla(211,79%,6%,.1) inset,
-	              0 0 1px hsla(211,79%,6%,.15) inset;
 }
 .robotics-button {
 	background: url(/images/robotics-button.jpg) ;

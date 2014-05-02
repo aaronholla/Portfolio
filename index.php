@@ -44,55 +44,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
 	<div class="navbar">
-		<div class="container">
-			<div class="navbar-left">
-				<a href="#">Aaron Holland</a>
+		<div class="holder">
+			<div class="logo">
+				<img src="/images/logo.png">
 			</div>
-			<div class="navbar-right">
-				<ul>
-					<li><a href="#about" id="nav-about" class="current">About Me</a></li>
-					<li><a href="#projects" id="nav-projects">Projects</a></li>
-					<li><a href="#contact" id="nav-contact">Contact Me</a></li>
-				</ul>
-			</div>
+			<span>Aaron Holland</span>
+			<ul class="social-links">
+				<li><a href="https://github.com/aaronholla/Portfolio"><i class="fa fa-github fa-2x"></i></a></li>
+				<li><a href="https://twitter.com/aaronholla_"><i class="fa fa-twitter fa-2x"></i></a></li>
+				<li><a href=""><i class="fa fa-envelope-o fa-2x"></i></a></li>
+			</ul>
 		</div>
 	</div>
 	<div class="content">
-		<div class="section" id="about">
-			<div class="container">
-				<h1>About Me</h1>
-				<a>My name is Aaron Holland, I am a Web Developer.</a>
-				<div>
-					<div id="avatar"></div>
-					<canvas id="chart" width="460" height="460"></canvas>
-				</div>
-				<div id="skills">
-					<div class="skills-section">
-						<p>Front End</p>
-						<div class="skillbar"><div id="skill1"><span>HTML5</span></div></div>
-						<div class="skillbar"><div id="skill2"><span>CSS3</span></div></div>
-						<div class="skillbar"><div id="skill3"><span>Javascript</span></div></div>
-					</div>
-					<div class="skills-section">
-						<p>Back End</p>
-						<div class="skillbar2"><div id="skill1"><span>PHP</span></div></div>
-						<div class="skillbar2"><div id="skill2"><span>Ruby</span></div></div>
-						<div class="skillbar2"><div id="skill3"><span>Wordpress</span></div></div>
-					</div>
-					<div class="skills-section">
-						<p>Other</p>
-						<div class="skillbar3"><div id="skill1"><span>Git</span></div></div>
-						<div class="skillbar3"><div id="skill2"><span>MySql</span></div></div>
-						<div class="skillbar3"><div id="skill3"><span>Photoshop</span></div></div>
-					</div>
-				</div>
-			</div>
+		<div class="project-links">
+			<ul>
+				<li><a href=""><img src="/images/SharkLogo.png" height="150"></a></li>
+				<li><a href=""><img src="/images/ResizeMe-Icon.png" height="140"></a></li>
+			</ul>
 		</div>
 		<div class="section" id="projects">
-			<div class="container">
-				<h1>My Projects</h1>
-				<a>I have many projects here are a few of my favorites.</a>
-			</div>
 			<div class="slider">
 				<div id="binofparts">
 					<div class="container">
@@ -124,11 +95,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 			<div class="container">
 				<h1>Contact Me</h1>
 				<a>Feel free to contact me about anything.</a>
-				<ul id="contact-links">
-					<li><a class="social-button" href="https://github.com/aaronholla/Portfolio"><i class="fa fa-github fa-2x pull-left"></i> View on GitHub</a></li>
-					<li><a class="social-button" href="https://twitter.com/aaronholla_"><i class="fa fa-twitter fa-2x pull-left"></i> Follow on Twitter</a></li>
-					<li><a href="http://referrals.trhou.se/aaronholland" target="_blank"><img src="/images/treehouse.png"/></a></li>
-				</ul>
 				<form action="" method="post">
 					<input type="text" name="name" placeholder="Your Name">
 				  	<input type="text" name="email" placeholder="Your Email">
