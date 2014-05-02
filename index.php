@@ -35,12 +35,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<title>Aaron Holland</title>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="/js/jquery.bxslider.min.js"></script>
-	<link href="/css/jquery.bxslider.css" rel="stylesheet" />
 	<script src="/js/javascript.js"></script>
+	<script type="text/javascript" src="/slick/slick.min.js"></script>
 </head>
 <body>
 	<div class="navbar">
@@ -65,29 +65,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 				<li><a href=""><img src="/images/ResizeMe-Icon.png"></a></li>
 			</ul>
 		</div>
-		<div class="section" id="projects">
-			<div class="slider">
+		<div class="section">
+			<div class="projects">
 				<div id="binofparts">
 					<div class="container">
 						<div class="desc-left"><h2>Bin of Parts</h2><a>A non-profit I founded to help US FIRST Robotics teams to find the things that they need.</a><a class="resizeme-button" href="https://binofparts.com">View Site</a></div>
-						<img src="/images/binofparts.png" alt="Bin of Parts" />
+						<img src="/images/binofparts.png" alt="Bin of Parts" width="500" />
 					</div>
 				</div>
 				<div id="robotics">
 					<div class="container">
-						<img src="/images/robosharks.png" alt="The Robo-Sharks"  />
+						<img src="/images/robosharks.png" alt="The Robo-Sharks" width="500" />
 						<div class="desc-right"><h2>TheRoboSharks.com</h2><a>I completely redesigned the robotics teams website when I was on the team. The site has since been taken down but you can view this amazing website using my archived version here.</a><a class="robotics-button" target="_blank" href="/robosharks">View Archive</a></div>
 					</div>
 				</div>
 				<div id="resizeme">
 					<div class="container">
 						<div class="desc-left"><h2>ResizeMe</h2><a>ResizeMe is a Safari extension that adds a toolbar to allow you to resize the Safari window to six different sizes, including full screen. Resize your safari window to any size you want with just a single click!</a><a class="resizeme-button" href="/download/ResizeMe.safariextz.zip">Download</a></div>
-						<img src="/images/resizeme.png" alt="Resize Me" />
+						<img src="/images/resizeme.png" alt="Resize Me" width="500" />
 					</div>
 				</div>
 				<div id="photogallery">
 					<div class="container">
-						<img src="/images/photogallery.png" alt="Photo Gallery"/>
+						<img src="/images/photogallery.png" alt="Photo Gallery" width="600" />
 						<div class="desc-right"><h2>Photo Gallery</h2><a>This is a photo gallery that I built from scratch. It is fully responsive and will look perfect on any device. Not only that but it will automatically load any images that are inside the images folder.</a><a class="robotics-button" target="_blank" href="/photogallery">View Demo</a></div>
 					</div>
 				</div>
