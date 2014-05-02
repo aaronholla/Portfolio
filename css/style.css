@@ -48,16 +48,21 @@ h2{
 }
 .project-links{
 	width: 100%;
-	margin: auto;
 }
 .project-links > ul{
-	width: 800px;
+	width: 600px;
+	margin: auto;
 }
 .project-links > ul > li{
 	display: inline-block;
+
 }
 .project-links > ul > li > a{
 	width: 50px;
+	height: 150px;
+}
+.project-links > ul > li > a > img{
+	height: 150px;
 }
 #avatar{
 	position: absolute;
