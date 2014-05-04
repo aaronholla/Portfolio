@@ -5,6 +5,7 @@ html, body{
 	margin: 0;
 	background:#FAFAFA;
 	z-index:0;
+	position: fixed;
 	width: 100%;
 }
 h2{
@@ -21,23 +22,22 @@ h2{
 }
 .content{
 	z-index:1;
-	margin-top:500px;
 }
 .container{
 	width:950px;
 	margin: auto;
 }
 .section{
-	height: 675px;
 }
 .navbar{
 	width:100%;
 	top:0;
 	left:0;	
-	border-bottom: 1px solid #333333;
 	height:500px;
 	position:fixed;
+	background-color: #ffffff;
 	z-index: 100;
+	overflow: hidden;
 }
 .navbar > .holder{
 	width: 140px;
@@ -46,8 +46,11 @@ h2{
 .social-links > li{
 	display: inline-block;
 }
+
 .project-links{
 	width: 100%;
+	position: fixed;
+	top: 500px;
 }
 .project-links > ul{
 	width: 600px;
@@ -58,14 +61,14 @@ h2{
 
 }
 .project-links > ul > li > a{
-	width: 50px;
-	height: 150px;
 }
 .project-links > ul > li > a > img{
 	height: 150px;
 }
+.projects{
+	margin-top:300px;
+}
 #binofparts{
-	min-width: 950px;
 }
 #binofparts img{
 	display: inline;
@@ -74,7 +77,6 @@ h2{
 	box-shadow: 0 0 18px 8px hsla(211,79%,6%,0.4);
 }
 #robotics{
-	min-width: 950px;
 }
 #robotics img{
 	display: inline;
@@ -83,8 +85,6 @@ h2{
 	box-shadow: 0 0 18px 8px hsla(211,79%,6%,0.4);
 }
 #resizeme{
-	min-width: 950px;
-	height: 500px;
 }
 #resizeme img{
 	display: inline;
@@ -93,7 +93,6 @@ h2{
 	box-shadow: 0 0 18px 8px hsla(211,79%,6%,0.4);
 }
 #photogallery{
-	min-width: 950px;
 }
 #photogallery img{
 	margin-top: 50px;

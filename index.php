@@ -48,18 +48,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 			<div class="logo">
 				<img src="/images/logo.png">
 			</div>
-			<span>Aaron Holland</span>
-			<ul class="social-links">
-				<li><a href="https://github.com/aaronholla/Portfolio"><i class="fa fa-github fa-2x"></i></a></li>
-				<li><a href="https://twitter.com/aaronholla_"><i class="fa fa-twitter fa-2x"></i></a></li>
-				<li><a href=""><i class="fa fa-envelope-o fa-2x"></i></a></li>
-			</ul>
+			<div class="logo-bottom">
+				<span>Aaron Holland</span>
+				<ul class="social-links">
+					<li><a href="https://github.com/aaronholla/Portfolio"><i class="fa fa-github fa-2x"></i></a></li>
+					<li><a href="https://twitter.com/aaronholla_"><i class="fa fa-twitter fa-2x"></i></a></li>
+					<li><a href=""><i class="fa fa-envelope-o fa-2x"></i></a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<div class="content">
 		<div class="project-links">
 			<ul>
-				<li><a href=""><img src="/images/SharkLogo.png"></a></li>
+				<li><a><img src="/images/SharkLogo.png"></a></li>
 				<li><a href=""><img src="/images/ResizeMe-Icon.png"></a></li>
 				<li><a href=""><img src="/images/ResizeMe-Icon.png"></a></li>
 				<li><a href=""><img src="/images/ResizeMe-Icon.png"></a></li>
