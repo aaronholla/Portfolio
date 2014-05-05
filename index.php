@@ -48,23 +48,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 			<div class="logo">
 				<img src="/images/logo.png">
 			</div>
-			<div class="logo-bottom">
-				<span>Aaron Holland</span>
-				<ul class="social-links">
-					<li><a href="https://github.com/aaronholla/Portfolio"><i class="fa fa-github fa-2x"></i></a></li>
-					<li><a href="https://twitter.com/aaronholla_"><i class="fa fa-twitter fa-2x"></i></a></li>
-					<li><a href=""><i class="fa fa-envelope-o fa-2x"></i></a></li>
-				</ul>
-			</div>
+			<div class="title"><span>Aaron Holland</span></div>
+			<ul class="social-links">
+				<li><a href="https://github.com/aaronholla/Portfolio" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+				<li><a href="https://twitter.com/aaronholla_" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+				<li class="contact-button"><a><i class="fa fa-envelope-o fa-2x"></i></a></li>
+			</ul>
 		</div>
 	</div>
 	<div class="content">
+		<div class="section" id="contact">
+			<div class="container">
+				<h1>Contact Me</h1>
+				<form action="" method="post">
+					<input type="text" name="name" placeholder="Your Name">
+				  	<input type="text" name="email" placeholder="Your Email">
+				  	<input type="text" name="address" placeholder="Please Leave Blank." style="display:none;">
+				 	<textarea name="message" rows="16" cols="28" placeholder="Have a question for me?"></textarea>
+				  	<input type="submit" id="submit" value="Send">
+				</form>
+			</div>
+		</div>
 		<div class="project-links">
 			<ul>
-				<li><a><img src="/images/SharkLogo.png"></a></li>
-				<li><a href=""><img src="/images/ResizeMe-Icon.png"></a></li>
-				<li><a href=""><img src="/images/ResizeMe-Icon.png"></a></li>
-				<li><a href=""><img src="/images/ResizeMe-Icon.png"></a></li>
+				<li><a id="binofparts-link"><img src="/images/ResizeMe-Icon.png"></a></li>
+				<li><a id="robotics-link"><img src="/images/SharkLogo.png"></a></li>
+				<li><a id="resizeme-link"><img src="/images/ResizeMe-Icon.png"></a></li>
+				<li><a id="photogallery-link"><img src="/images/ResizeMe-Icon.png"></a></li>
 			</ul>
 		</div>
 		<div class="section">
@@ -93,19 +103,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 						<div class="desc-right"><h2>Photo Gallery</h2><a>This is a photo gallery that I built from scratch. It is fully responsive and will look perfect on any device. Not only that but it will automatically load any images that are inside the images folder.</a><a class="robotics-button" target="_blank" href="/photogallery">View Demo</a></div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="section" id="contact">
-			<div class="container">
-				<h1>Contact Me</h1>
-				<a>Feel free to contact me about anything.</a>
-				<form action="" method="post">
-					<input type="text" name="name" placeholder="Your Name">
-				  	<input type="text" name="email" placeholder="Your Email">
-				  	<input type="text" name="address" placeholder="Please Leave Blank." style="display:none;">
-				 	<textarea name="message" rows="16" cols="28" placeholder="Have a question for me?"></textarea>
-				  	<input type="submit" id="submit" value="Send">
-				</form>
 			</div>
 		</div>
 	</div>

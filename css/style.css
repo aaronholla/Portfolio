@@ -8,6 +8,9 @@ html, body{
 	position: fixed;
 	width: 100%;
 }
+body{
+	min-width: 1024px;
+}
 h2{
 	text-align:center;
 }
@@ -35,7 +38,6 @@ h2{
 	left:0;	
 	height:500px;
 	position:fixed;
-	background-color: #ffffff;
 	z-index: 100;
 	overflow: hidden;
 }
@@ -43,24 +45,42 @@ h2{
 	width: 140px;
 	margin: auto;
 }
+.title{
+	position: absolute;
+	font-size: 28px;
+	font-weight: 600;
+	margin-left: -28px;
+	text-align: center;
+}
+.social-links{
+	position: absolute;
+	margin-top: 55px;
+	margin-left: 20px;
+	padding: 0px;
+}
 .social-links > li{
 	display: inline-block;
 }
-
 .project-links{
 	width: 100%;
 	position: fixed;
 	top: 500px;
 }
 .project-links > ul{
-	width: 600px;
+	width: 650px;
 	margin: auto;
 }
 .project-links > ul > li{
 	display: inline-block;
-
+	height: 150px;
+}
+.project-links > ul > li:hover{
+	background-color: #F3F3F3;
 }
 .project-links > ul > li > a{
+}
+.project-links > ul > li > a:hover{
+	cursor: pointer;
 }
 .project-links > ul > li > a > img{
 	height: 150px;
