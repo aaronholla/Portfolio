@@ -1,0 +1,107 @@
+{
+  "bio": {
+    "firstName": "Aaron",
+    "lastName": "Holland",
+    "email": {
+      "personal": "aaronholla@gmail.com"
+    },
+    "summary": "I'm a self-taught programmer that is always willing to learn and push beyond my comfort zone. I love helping people learn about the world of science and technology, that’s why I've volunteered years to multiple causes. I have even created my own non-profit organization to further the student’s accessibility to science and technology.",
+    "location": {
+      "city": "Spring Hill",
+      "countryCode": "US",
+      "state": "Florida"
+    },
+    "websites": {
+      "blog": "http://aaronholla.com"
+    },
+    "profiles": {
+      "github": "aaronholla",
+      "twitter": "aaronholla_",
+      "skype": "aaronholla",
+      "treehouse": "aaronholland"
+    }
+  },
+  "work": [
+    {
+      "company": "Bin of Parts, Inc.",
+      "position": "Founder, Web Developer",
+      "website": "https://binofparts.com",
+      "startDate": "2013",
+      "summary": "A non-profit organization that I founded that hosts an online parts database for FRC teams.",
+      "highlights": [
+        "Solo developed an entire Ruby on Rails Application from the ground up.",
+        "Developed an iOS Application for regional events to inventory their parts."
+      ]
+    },
+    {
+      "company": "FRC Florida Regional Planning Commitee",
+      "position": "Assistant Web Developer",
+      "website": "http://usfirst.org",
+      "startDate": "2014",
+      "summary": "The planning committee helps plan the FRC Orlando Regional Event. I am helping by volunteering my time to redesign there website for the Orlando Regional."
+    },
+    {
+      "company": "FRC Team 1612",
+      "position": "Volunteer Mentor",
+      "website": "http://aaronholla.com/robosharks",
+      "startDate": "2010",
+      "endDate": "2013",
+      "summary": "Helped the students build a robot for the regional competition, also helped setup fundraisers and sponsors."
+    },
+    {
+      "company": "FRC Team 1612",
+      "position": "Lead Web Developer",
+      "website": "http://aaronholla.com/robosharks",
+      "startDate": "2008",
+      "endDate": "2009",
+      "summary": "Built a fully custom Rapidweaver theme for my high school robotics team to use on their website."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Fullsail University",
+      "startDate": "2010",
+      "endDate": "2011",
+      "area": "Game Art",
+      "studyType": "Bachelor"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Nature Coast takes gold in robotics",
+      "publisher": "Hernando Today",
+      "releaseDate": "March 20, 2010",
+      "website": "http://www.hernandotoday.com/article/20100320/ARTICLE/303209997"
+    },
+    {
+      "name": "Hernando's RoboSharks Spark Creativity, Teamwork To Stand Tall In World Competition",
+      "publisher": "83degrees",
+      "releaseDate": "APRIL 20, 2010",
+      "website": "http://www.83degreesmedia.com/features/robot042010.aspx"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Frontend",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "SCSS",
+        "Bootstrap",
+        "Foundation",
+        "Javascript",
+        "Jquery"
+      ]
+    },
+    {
+      "name": "Backend",
+      "keywords": [
+        "Ruby",
+        "Ruby on Rails",
+        "PHP",
+        "Mysql",
+        "Git"
+      ]
+    }
+  ]
+}
