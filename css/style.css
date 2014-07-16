@@ -105,6 +105,13 @@ h2{
 .projects{
 	margin-top:300px;
 }
+.technologies{
+	text-align: left;
+}
+.technologies > li{
+	padding-right: 10px;
+	display: inline-block;
+}
 #binofparts{
 }
 #binofparts img{
@@ -147,6 +154,9 @@ h2{
 	width:300px;
 	margin-top: 25px;
 	text-align: center;
+}
+.desc-button{
+	margin: auto;
 }
 .contact-button:hover{
 	cursor: pointer;
@@ -196,10 +206,8 @@ h2{
 	text-align:center;
 	width:100px;
 	height:20px;
-	padding:8px 15px 3px 15px;
-	float:right;
-	margin-top:45px;
-	margin-right: 90px;
+	padding:8px 35px;
+	margin-top:	25px;
 	color:#FFFFFF;
 	font:normal 12px Arial,Helvetica,Sans-Serif;
 	text-shadow:0 -1px 0 rgba(0, 0, 0, 0.2);
@@ -223,10 +231,8 @@ h2{
 	text-align:center;
 	width:100px;
 	height:20px;
-	padding:8px 15px 3px 15px;
-	margin-top:45px;
-	margin-left: -110px;
-	position: absolute;
+	padding:8px 35px;
+	margin-top: 25px;
 	color:#FFFFFF;
 	font:normal 12px Arial,Helvetica,Sans-Serif;
 	text-shadow:0 -1px 0 rgba(0, 0, 0, 0.2);

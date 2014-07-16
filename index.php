@@ -84,26 +84,46 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 			<div class="projects">
 				<div id="binofparts">
 					<div class="container">
-						<div class="desc-left"><h2>Bin of Parts</h2><a>A non-profit I founded to help US FIRST Robotics teams to find the things that they need.</a><a class="resizeme-button" href="https://binofparts.com">View Site</a></div>
+						<div class="desc-left">
+							<h2>Bin of Parts</h2>
+							<a>A non-profit organization that I founded that hosts an online parts database for FRC teams. Bin of Parts also offers a tool for regional events to inventory their parts.</a>
+							<hr /><ul class="technologies"><li>Ruby on Rails</li><li>iOS</li><li>Javascript</li><li>Vagrant</li><li>HTML</li><li>SCSS</li></ul>
+							<a class="resizeme-button desc-button" href="https://binofparts.com">View Site</a>
+						</div>
 						<img src="/images/binofparts.png" alt="Bin of Parts" width="500" />
 					</div>
 				</div>
 				<div id="robotics">
 					<div class="container">
 						<img src="/images/robosharks.png" alt="The Robo-Sharks" width="500" />
-						<div class="desc-right"><h2>TheRoboSharks.com</h2><a>I completely redesigned the robotics teams website when I was on the team. The site has since been taken down but you can view this amazing website using my archived version here.</a><a class="robotics-button" target="_blank" href="/robosharks">View Archive</a></div>
+						<div class="desc-right">
+							<h2>TheRoboSharks.com</h2>
+							<a>I completely redesigned the robotics teams website when I was on the team. The site has since been taken down but you can view this amazing website using my archived version here.</a>
+							<hr /><ul class="technologies"><li>jQuery</li><li>HTML</li><li>CSS</li></ul>
+							<a class="robotics-button desc-button" target="_blank" href="/robosharks">View Archive</a>
+						</div>
 					</div>
 				</div>
 				<div id="resizeme">
 					<div class="container">
-						<div class="desc-left"><h2>ResizeMe</h2><a>ResizeMe is a Safari extension that adds a toolbar to allow you to resize the Safari window to six different sizes, including full screen. Resize your safari window to any size you want with just a single click!</a><a class="resizeme-button" href="/download/ResizeMe.safariextz.zip">Download</a></div>
+						<div class="desc-left">
+							<h2>ResizeMe</h2>
+							<a>ResizeMe is a Safari extension that adds a toolbar to allow you to resize the Safari window to six different sizes, including full screen. Resize your safari window to any size you want with just a single click!</a>
+							<hr /><ul class="technologies"><li>Javascript</li><li>HTML</li><li>CSS</li></ul>
+							<a class="resizeme-button desc-button" href="/download/ResizeMe.safariextz.zip">Download</a>
+						</div>
 						<img src="/images/resizeme.png" alt="Resize Me" width="500" />
 					</div>
 				</div>
 				<div id="photogallery">
 					<div class="container">
 						<img src="/images/photogallery.png" alt="Photo Gallery" width="600" />
-						<div class="desc-right"><h2>Photo Gallery</h2><a>This is a photo gallery that I built from scratch. It is fully responsive and will look perfect on any device. Not only that but it will automatically load any images that are inside the images folder.</a><a class="robotics-button" target="_blank" href="/photogallery">View Demo</a></div>
+						<div class="desc-right">
+							<h2>Photo Gallery</h2>
+							<a>This is a photo gallery that I built from scratch. It is fully responsive and will look perfect on any device. Not only that but it will automatically load any images that are inside the images folder.</a>
+							<hr /><ul class="technologies"><li>jQuery</li><li>HTML</li><li>CSS</li></ul>
+							<a class="robotics-button" target="_blank" href="/photogallery">View Demo</a>
+						</div>
 					</div>
 				</div>
 			</div>
