@@ -86,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 					<div class="container">
 						<div class="desc-left">
 							<h2>Bin of Parts</h2>
-							<a>A non-profit organization that I founded that hosts an online parts database for FRC teams. Bin of Parts also offers a tool for regional events to inventory their parts.</a>
+							<a>A non-profit organization I founded that hosts an online parts database for FRC teams. Bin of Parts also offers a tool for regional events to inventory their parts.</a>
 							<hr /><ul class="technologies"><li>Ruby on Rails</li><li>iOS</li><li>Javascript</li><li>Vagrant</li><li>HTML</li><li>SCSS</li></ul>
 							<a class="resizeme-button desc-button" href="https://binofparts.com">View Site</a>
 						</div>
