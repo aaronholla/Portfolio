@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	<div class="navbar">
 		<div class="holder">
 			<div class="logo">
-				<img src="/images/logo.png">
+				<img src="/images/avatar.png">
 			</div>
 			<div class="title"><span>Aaron Holland</span></div>
 			<div class="resume"><a href="/resume.html"><span>View my Résumé</span></a></div>
