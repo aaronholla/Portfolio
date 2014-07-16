@@ -148,25 +148,34 @@ h2{
 	margin-top: 25px;
 	text-align: center;
 }
+.contact-button:hover{
+	cursor: pointer;
+}
 #contact{
-	margin-top: 55px;
-	padding-top: 25px;
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
 	color: #ffffff;
 	background-color: #0abc73;
 }
+#contact h1{
+	text-align: center;
+}
 #contact form{
-	margin: 125px 0 0 0px;
 	width: 410px;
+	margin: auto;
 }
 #contact input{
 	display: block;
 	height: 25px;
+	color: #000;
 }
 #contact input, textarea{
 	border-radius:5px;
 	border:none;
 	padding-left: 10px;
 	width: 400px;
+	color: #000;
 	margin-bottom: 15px;
 }
 #contact textarea{
@@ -178,7 +187,7 @@ h2{
 	float: right;
 	width: 85px;
 	cursor: pointer;
-	background:#2c3e50;
+	background:#333;
 	color: #ffffff;
 }
 .robotics-button {
