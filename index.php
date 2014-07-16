@@ -50,9 +50,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 			</div>
 			<div class="title"><span>Aaron Holland</span></div>
 			<ul class="social-links">
-				<li><a href="https://github.com/aaronholla/Portfolio" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
-				<li><a href="https://twitter.com/aaronholla_" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
-				<li class="contact-button"><a><i class="fa fa-envelope-o fa-2x"></i></a></li>
+				<li><a href="https://github.com/aaronholla" target="_blank" title="Github"><i class="fa fa-github fa-2x"></i></a></li>
+				<li><a href="https://twitter.com/aaronholla_" target="_blank" title="Twitter"><i class="fa fa-twitter fa-2x"></i></a></li>
+				<li class="contact-button"><a title="Contact Me"><i class="fa fa-envelope-o fa-2x"></i></a></li>
 			</ul>
 		</div>
 	</div>
