@@ -67,6 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 				  	<input type="text" name="email" placeholder="Your Email">
 				  	<input type="text" name="address" placeholder="Please Leave Blank." style="display:none;">
 				 	<textarea name="message" rows="16" cols="28" placeholder="Have a question for me?"></textarea>
+					<a class="contact-button"><i class="fa fa-times"></i> Cancel</a>
 				  	<input type="submit" id="submit" value="Send">
 				</form>
 			</div>
