@@ -52,6 +52,23 @@ h2{
 	margin-left: -28px;
 	text-align: center;
 }
+.resume{
+	position: absolute;
+	padding-top: 50px;
+	font-size: 16px;
+	text-align: center;
+}
+.resume a{
+	font-weight: 500;
+	text-decoration: none;
+}
+.resume a:hover{
+	font-weight: 600;
+}
+.resume a:visited{
+	color: #000;
+	font-weight: 500;
+}
 .social-links{
 	position: absolute;
 	margin-top: 55px;
