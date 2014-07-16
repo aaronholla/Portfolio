@@ -71,10 +71,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 		</div>
 		<div class="project-links">
 			<ul>
-				<li><a id="binofparts-link"><img src="/images/ResizeMe-Icon.png"></a></li>
-				<li><a id="robotics-link"><img src="/images/SharkLogo.png"></a></li>
-				<li><a id="resizeme-link"><img src="/images/ResizeMe-Icon.png"></a></li>
-				<li><a id="photogallery-link"><img src="/images/ResizeMe-Icon.png"></a></li>
+				<li><a id="binofparts-link" title="Bin of Parts"><img src="/images/binofparts-icon.png"></a></li>
+				<li><a id="robotics-link" title="Robo-Sharks"><img src="/images/SharkLogo.png"></a></li>
+				<li><a id="resizeme-link" title="Resize Me"><img src="/images/ResizeMe-Icon.png"></a></li>
+				<li><a id="photogallery-link" title="Photo Gallery"><img src="/images/photogallery-icon.png"></a></li>
 			</ul>
 		</div>
 		<div class="section">
