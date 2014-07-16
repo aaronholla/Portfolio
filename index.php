@@ -34,102 +34,98 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<title>Aaron Holland</title>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="/js/jquery.bxslider.min.js"></script>
-	<link href="/css/jquery.bxslider.css" rel="stylesheet" />
 	<script src="/js/javascript.js"></script>
+	<script type="text/javascript" src="/slick/slick.min.js"></script>
 </head>
 <body>
 	<div class="navbar">
-		<div class="container">
-			<div class="navbar-left">
-				<a href="#">Aaron Holland</a>
+		<div class="holder">
+			<div class="logo">
+				<img src="/images/avatar.png">
 			</div>
-			<div class="navbar-right">
-				<ul>
-					<li><a href="#about" id="nav-about" class="current">About Me</a></li>
-					<li><a href="#projects" id="nav-projects">Projects</a></li>
-					<li><a href="#contact" id="nav-contact">Contact Me</a></li>
-				</ul>
-			</div>
+			<div class="title"><span>Aaron Holland</span></div>
+			<div class="resume"><a href="/resume.html"><span>View my Résumé</span></a></div>
+			<ul class="social-links">
+				<li><a href="https://github.com/aaronholla" target="_blank" title="Github"><i class="fa fa-github fa-2x"></i></a></li>
+				<li><a href="https://twitter.com/aaronholla_" target="_blank" title="Twitter"><i class="fa fa-twitter fa-2x"></i></a></li>
+				<li class="contact-button"><a title="Contact Me"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+			</ul>
 		</div>
 	</div>
 	<div class="content">
-		<div class="section" id="about">
-			<div class="container">
-				<h1>About Me</h1>
-				<a>My name is Aaron Holland, I am a Web Developer.</a>
-				<div>
-					<div id="avatar"></div>
-					<canvas id="chart" width="460" height="460"></canvas>
-				</div>
-				<div id="skills">
-					<div class="skills-section">
-						<p>Front End</p>
-						<div class="skillbar"><div id="skill1"><span>HTML5</span></div></div>
-						<div class="skillbar"><div id="skill2"><span>CSS3</span></div></div>
-						<div class="skillbar"><div id="skill3"><span>Javascript</span></div></div>
-					</div>
-					<div class="skills-section">
-						<p>Back End</p>
-						<div class="skillbar2"><div id="skill1"><span>PHP</span></div></div>
-						<div class="skillbar2"><div id="skill2"><span>Ruby</span></div></div>
-						<div class="skillbar2"><div id="skill3"><span>Wordpress</span></div></div>
-					</div>
-					<div class="skills-section">
-						<p>Other</p>
-						<div class="skillbar3"><div id="skill1"><span>Git</span></div></div>
-						<div class="skillbar3"><div id="skill2"><span>MySql</span></div></div>
-						<div class="skillbar3"><div id="skill3"><span>Photoshop</span></div></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="section" id="projects">
-			<div class="container">
-				<h1>My Projects</h1>
-				<a>I have many projects here are a few of my favorites.</a>
-			</div>
-			<div class="slider">
-				<div id="robotics">
-					<div class="container">
-						<img src="/images/robosharks.png" alt="The Robo-Sharks"  />
-						<div class="desc-right"><h2>TheRoboSharks.com</h2><a>I completely redesigned the robotics teams website when I was on the team. The site has since been taken down but you can view this amazing website using my archived version here.</a><a class="robotics-button" target="_blank" href="/robosharks">View Archive</a></div>
-					</div>
-				</div>
-				<div id="resizeme">
-					<div class="container">
-						<div class="desc-left"><h2>ResizeMe</h2><a>ResizeMe is a Safari extension that adds a toolbar to allow you to resize the Safari window to six different sizes, including full screen. Resize your safari window to any size you want with just a single click!</a><a class="resizeme-button" href="/download/ResizeMe.safariextz.zip">Download</a></div>
-						<img src="/images/resizeme.png" alt="Resize Me" />
-					</div>
-				</div>
-				<div id="photogallery">
-					<div class="container">
-						<img src="/images/photogallery.png" alt="Photo Gallery"/>
-						<div class="desc-right"><h2>Photo Gallery</h2><a>This is a photo gallery that I built from scratch. It is fully responsive and will look perfect on any device. Not only that but it will automatically load any images that are inside the images folder.</a><a class="robotics-button" target="_blank" href="/photogallery">View Demo</a></div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="section" id="contact">
 			<div class="container">
 				<h1>Contact Me</h1>
-				<a>Feel free to contact me about anything.</a>
-				<ul id="contact-links">
-					<li><a class="social-button" href="https://github.com/aaronholla/Portfolio"><i class="fa fa-github fa-2x pull-left"></i> View on GitHub</a></li>
-					<li><a class="social-button" href="https://twitter.com/aaronholla_"><i class="fa fa-twitter fa-2x pull-left"></i> Follow on Twitter</a></li>
-					<li><a href="http://referrals.trhou.se/aaronholland" target="_blank"><img src="/images/treehouse.png"/></a></li>
-				</ul>
 				<form action="" method="post">
 					<input type="text" name="name" placeholder="Your Name">
 				  	<input type="text" name="email" placeholder="Your Email">
 				  	<input type="text" name="address" placeholder="Please Leave Blank." style="display:none;">
 				 	<textarea name="message" rows="16" cols="28" placeholder="Have a question for me?"></textarea>
+					<a class="contact-button"><i class="fa fa-times"></i> Cancel</a>
 				  	<input type="submit" id="submit" value="Send">
 				</form>
+			</div>
+		</div>
+		<div class="project-links">
+			<ul>
+				<li><a id="binofparts-link" title="Bin of Parts"><img src="/images/binofparts-icon.png"></a></li>
+				<li><a id="robotics-link" title="Robo-Sharks"><img src="/images/SharkLogo.png"></a></li>
+				<li><a id="resizeme-link" title="Resize Me"><img src="/images/ResizeMe-Icon.png"></a></li>
+				<li><a id="photogallery-link" title="Photo Gallery"><img src="/images/photogallery-icon.png"></a></li>
+			</ul>
+		</div>
+		<div class="section">
+			<div class="projects">
+				<div id="binofparts">
+					<div class="container">
+						<div class="desc-left">
+							<h2>Bin of Parts</h2>
+							<a>A non-profit organization that I founded that hosts an online parts database for FRC teams. Bin of Parts also offers a tool for regional events to inventory their parts.</a>
+							<hr /><ul class="technologies"><li>Ruby on Rails</li><li>iOS</li><li>Javascript</li><li>Vagrant</li><li>HTML</li><li>SCSS</li></ul>
+							<a class="resizeme-button desc-button" href="https://binofparts.com">View Site</a>
+						</div>
+						<img src="/images/binofparts.png" alt="Bin of Parts" width="500" />
+					</div>
+				</div>
+				<div id="robotics">
+					<div class="container">
+						<img src="/images/robosharks.png" alt="The Robo-Sharks" width="500" />
+						<div class="desc-right">
+							<h2>TheRoboSharks.com</h2>
+							<a>I completely redesigned the robotics teams website when I was on the team. The site has since been taken down but you can view this amazing website using my archived version here.</a>
+							<hr /><ul class="technologies"><li>jQuery</li><li>HTML</li><li>CSS</li></ul>
+							<a class="robotics-button desc-button" target="_blank" href="/robosharks">View Archive</a>
+						</div>
+					</div>
+				</div>
+				<div id="resizeme">
+					<div class="container">
+						<div class="desc-left">
+							<h2>ResizeMe</h2>
+							<a>ResizeMe is a Safari extension that adds a toolbar to allow you to resize the Safari window to six different sizes, including full screen. Resize your safari window to any size you want with just a single click!</a>
+							<hr /><ul class="technologies"><li>Javascript</li><li>HTML</li><li>CSS</li></ul>
+							<a class="resizeme-button desc-button" href="/download/ResizeMe.safariextz.zip">Download</a>
+						</div>
+						<img src="/images/resizeme.png" alt="Resize Me" width="500" />
+					</div>
+				</div>
+				<div id="photogallery">
+					<div class="container">
+						<img src="/images/photogallery.png" alt="Photo Gallery" width="600" />
+						<div class="desc-right">
+							<h2>Photo Gallery</h2>
+							<a>This is a photo gallery that I built from scratch. It is fully responsive and will look perfect on any device. Not only that but it will automatically load any images that are inside the images folder.</a>
+							<hr /><ul class="technologies"><li>jQuery</li><li>HTML</li><li>CSS</li></ul>
+							<a class="robotics-button" target="_blank" href="/photogallery">View Demo</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
