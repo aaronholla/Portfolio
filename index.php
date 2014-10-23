@@ -44,11 +44,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	<script type="text/javascript" src="/slick/slick.min.js"></script>
 </head>
 <body>
+	<div class="header">
+		<img src="images/banner.jpg" class="banner">
+	</div>
 	<div class="navbar">
 		<div class="holder">
-			<div class="logo">
-				<img src="http://www.gravatar.com/avatar/36633d24d19622c1ebb9d3a088ddd6f8.png?s=175">
-			</div>
 			<div class="title"><span>Aaron Holland</span></div>
 			<div class="resume"><a href="/resume.html"><span>View my Résumé</span></a></div>
 			<ul class="social-links">
