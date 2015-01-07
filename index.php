@@ -36,12 +36,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="/css/style.css" />
-	<link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<title>Aaron Holland</title>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="/js/javascript.js"></script>
-	<script type="text/javascript" src="/slick/slick.min.js"></script>
 </head>
 <body>
 	<div class="header">

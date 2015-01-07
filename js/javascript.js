@@ -17,9 +17,6 @@ $(document).ready(function () {
             $('.resume').animate({'width':'135px', 'left':'15%'}, 'fast');
             $('.social-links').animate({'width':'100px','margin-top': '0px', 'right':'20%'}, 'fast');
             $('.projects').fadeIn();
-            $('.projects').slick();
-            var i = $(this).index();
-            $('.projects').slickGoTo(i);
         }
     });
    $('.contact-button').click(function(){
