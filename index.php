@@ -42,90 +42,96 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	<script src="/js/javascript.js"></script>
 </head>
 <body>
-	<div class="header">
-		<img src="images/banner.jpg" class="banner">
-	</div>
-	<div class="navbar">
-		<div class="holder">
-			<div class="title"><span>Aaron Holland</span></div>
-			<div class="resume"><a href="/resume.html"><span>View my Résumé</span></a></div>
-			<ul class="social-links">
-				<li><a href="https://github.com/aaronholla" target="_blank" title="Github"><i class="fa fa-github fa-2x"></i></a></li>
-				<li><a href="https://twitter.com/aaronholla_" target="_blank" title="Twitter"><i class="fa fa-twitter fa-2x"></i></a></li>
-				<li class="contact-button"><a title="Contact Me"><i class="fa fa-envelope-o fa-2x"></i></a></li>
-			</ul>
+	<nav class="navbar">
+		<div id="background"></div>
+        <div class="holder">
+            <div class="title"><span>Aaron Holland</span></div>
+            <ul>
+                <li><a href="#aboutme" id="nav-about">About Me</a></li>
+                <li><a href="#projects" id="nav-projects">Projects</a></li>
+                <li><a href="#contact" id="nav-contact">Contact</a></li>
+                <li><a href="/resume.html" id="button">Résumé</a></li>
+            </ul>
+        </div>
+    </nav>
+	<section class="section" id="aboutme">
+		<div class="banner">
+			<img src="/images/banner.jpg">
 		</div>
-	</div>
-	<div class="content">
-		<div class="section" id="contact">
+		<div id="about">
+			<h1>Hi, my name is Aaron Holland.</h1>
+			<h2>I am a Web Developer.</h2>
+		</div>
+	</section>
+	<section class="section" id="social">
+		<ul class="social-links">
+			<li><a href="https://github.com/aaronholla" target="_blank" title="Github"><i class="fa fa-github-alt fa-5x"></i></a></li>
+			<li><a href="https://twitter.com/aaronholla_" target="_blank" title="Twitter"><i class="fa fa-twitter fa-5x"></i></a></li>
+			<li><a title="Treehouse" href="http://teamtreehouse.com/aaronholland" target="_blank" id="treehouse-social"><img src="/images/treehouselogo.png"></a></li>
+		</ul>
+	</section>
+	<section class="section">
+		<div id="projects">
 			<div class="container">
-				<h1>Contact Me</h1>
-				<form action="" method="post">
-					<input type="text" name="name" placeholder="Your Name">
-				  	<input type="text" name="email" placeholder="Your Email">
-				  	<input type="text" name="address" placeholder="Please Leave Blank." style="display:none;">
-				 	<textarea name="message" rows="16" cols="28" placeholder="Have a question for me?"></textarea>
-					<a class="contact-button"><i class="fa fa-times"></i> Cancel</a>
-				  	<input type="submit" id="submit" value="Send">
-				</form>
+				<h1>Projects</h1>
 			</div>
-		</div>
-		<div class="project-links">
-			<ul>
-				<li><a id="binofparts-link" title="Bin of Parts"><img src="/images/binofparts-icon.png"></a></li>
-				<li><a id="robotics-link" title="Robo-Sharks"><img src="/images/SharkLogo.png"></a></li>
-				<li><a id="resizeme-link" title="Resize Me"><img src="/images/ResizeMe-Icon.png"></a></li>
-				<li><a id="photogallery-link" title="Photo Gallery"><img src="/images/photogallery-icon.png"></a></li>
-			</ul>
-		</div>
-		<div class="section">
-			<div class="projects">
-				<div id="binofparts">
-					<div class="container">
-						<div class="desc-left">
-							<h2>Bin of Parts</h2>
-							<a>A non-profit organization I founded that hosts an online parts database for FRC teams. Bin of Parts also offers a tool for regional events to inventory their parts.</a>
-							<hr /><ul class="technologies"><li>Ruby on Rails</li><li>iOS</li><li>Javascript</li><li>Vagrant</li><li>HTML</li><li>SCSS</li></ul>
-							<a class="resizeme-button desc-button" href="https://binofparts.com">View Site</a>
-						</div>
-						<img src="/images/binofparts.png" alt="Bin of Parts" width="500" />
+			<div id="binofparts">
+				<div class="container">
+					<div class="desc-left">
+				        <h2>Bin of Parts</h2>
+				        <a>A non-profit organization I founded that hosts an online parts database for FRC teams. Bin of Parts also offers a tool for regional events to inventory their parts.</a>
+				        <hr /><ul class="technologies"><li>Ruby on Rails</li><li>iOS</li><li>Javascript</li><li>Vagrant</li><li>HTML</li><li>SCSS</li></ul>
+				        <a class="resizeme-button desc-button" target="_blank" href="http://www.binofparts.com" id="button">View Site</a>
+				    </div>
+				    <img src="/images/binofparts.png" alt="Bin of Parts" width="500">
+				</div>
+			</div>
+			<div id="robosharks">
+				<div class="container">
+					<img src="/images/robosharks.png" alt="The Robo-Sharks" width="500">
+					<div class="desc-right">
+						<h2>TheRoboSharks.com</h2>
+						<a>I completely redesigned the robotics teams website when I was on the team. The site has since been taken down but you can view this amazing website using my archived version here.</a>
+						<hr /><ul class="technologies"><li>jQuery</li><li>HTML</li><li>CSS</li></ul>
+						<a class="robotics-button desc-button" target="_blank" href="/robosharks" id="button">View Archive</a>
 					</div>
 				</div>
-				<div id="robotics">
-					<div class="container">
-						<img src="/images/robosharks.png" alt="The Robo-Sharks" width="500" />
-						<div class="desc-right">
-							<h2>TheRoboSharks.com</h2>
-							<a>I completely redesigned the robotics teams website when I was on the team. The site has since been taken down but you can view this amazing website using my archived version here.</a>
-							<hr /><ul class="technologies"><li>jQuery</li><li>HTML</li><li>CSS</li></ul>
-							<a class="robotics-button desc-button" target="_blank" href="/robosharks">View Archive</a>
-						</div>
+			</div>
+			<div id="resizeme">
+				<div class="container">
+					<div class="desc-left">
+						<h2>ResizeMe</h2>
+						<a>ResizeMe is a Safari extension that adds a toolbar to allow you to resize the Safari window to six different sizes, including full screen. Resize your safari window to any size you want with just a single click!</a>
+						<hr /><ul class="technologies"><li>Javascript</li><li>HTML</li><li>CSS</li></ul>
+						<a class="resizeme-button desc-button" href="/download/ResizeMe.safariextz.zip" id="button">Download</a>
 					</div>
+					<img src="/images/resizeme.png" alt="Resize Me" width="500">
 				</div>
-				<div id="resizeme">
-					<div class="container">
-						<div class="desc-left">
-							<h2>ResizeMe</h2>
-							<a>ResizeMe is a Safari extension that adds a toolbar to allow you to resize the Safari window to six different sizes, including full screen. Resize your safari window to any size you want with just a single click!</a>
-							<hr /><ul class="technologies"><li>Javascript</li><li>HTML</li><li>CSS</li></ul>
-							<a class="resizeme-button desc-button" href="/download/ResizeMe.safariextz.zip">Download</a>
-						</div>
-						<img src="/images/resizeme.png" alt="Resize Me" width="500" />
-					</div>
-				</div>
-				<div id="photogallery">
-					<div class="container">
-						<img src="/images/photogallery.png" alt="Photo Gallery" width="600" />
-						<div class="desc-right">
-							<h2>Photo Gallery</h2>
-							<a>This is a photo gallery that I built from scratch. It is fully responsive and will look perfect on any device. Not only that but it will automatically load any images that are inside the images folder.</a>
-							<hr /><ul class="technologies"><li>jQuery</li><li>HTML</li><li>CSS</li></ul>
-							<a class="robotics-button" target="_blank" href="/photogallery">View Demo</a>
-						</div>
+			</div>
+			<div id="photogallery">
+				<div class="container">
+					<img src="/images/photogallery.png" alt="Photo Gallery" width="600">
+					<div class="desc-right">
+						<h2>Photo Gallery</h2>
+						<a>This is a photo gallery that I built from scratch. It is fully responsive and will look perfect on any device. Not only that but it will automatically load any images that are inside the images folder.</a>
+						<hr /><ul class="technologies"><li>jQuery</li><li>HTML</li><li>CSS</li></ul>
+						<a class="robotics-button" target="_blank" href="/photogallery" id="button">View Demo</a>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
+	<section class="section" id="contact">
+		<div class="container">
+			<h1>Contact Me</h1>
+			<form action="" method="post">
+				<input type="text" name="name" placeholder="Your Name">
+			  	<input type="text" name="email" placeholder="Your Email">
+			  	<input type="text" name="address" placeholder="Please Leave Blank." style="display:none;">
+			 	<textarea name="message" rows="16" cols="28" placeholder="Have a question for me?"></textarea>
+			  	<input type="submit" id="submit" value="Send">
+			</form>
+		</div>
+	</section>
 </body>
 </html>
