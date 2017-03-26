@@ -1,8 +1,0 @@
-RewriteEngine on
-
-<IfModule mod_mime.c>
- AddType application/x-safari-extension safariextz
-</IfModule>
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]

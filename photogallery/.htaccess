@@ -1,9 +1,0 @@
-RewriteEngine on
-
-<IfModule mod_mime.c>
- AddType application/x-safari-extension safariextz
-</IfModule>
-
-<IfModule mod_headers.c>
-    Header set Access-Control-Allow-Origin "*"
-</IfModule>
