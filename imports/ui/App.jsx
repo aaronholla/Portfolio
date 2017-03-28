@@ -2,31 +2,26 @@ import React, { Component, PropTypes } from 'react';
 import { Meteor } from 'meteor/meteor';
 import { createContainer } from 'meteor/react-meteor-data';
 import ReactDOM from 'react-dom';
-import Task from './Task.jsx';
-import { Tasks } from '../api/tasks.js';
-import { Accounts } from 'meteor/std:accounts-ui';
+import Project from './Project.jsx';
+import { Projects } from '../api/projects.js';
+import Photo from './Photo.jsx';
+// import { Accounts } from 'meteor/std:accounts-ui';
 
-Accounts.ui.config({
-  passwordSignupFields: 'EMAIL_ONLY_NO_PASSWORD',
-  loginPath: '/admin',
-  forbidClientAccountCreation : true
-});
 
-// App component - represents the whole app
 class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      hideCompleted: false,
-    };
+    // this.state = {
+    //   hideCompleted: false,
+    // };
   }
 
   handleSubmit(event) {
     event.preventDefault();
 
-    // Find the text field via the React ref
-    const text = ReactDOM.findDOMNode(this.refs.textInput).value.trim();
+    const email = ReactDOM.findDOMNode(this.refs.emailInput).value.trim();
+    const message = ReactDOM.findDOMNode(this.refs.textInput).value.trim();
 
     Meteor.call('tasks.insert', text);
 
@@ -40,60 +35,45 @@ class App extends Component {
     });
   }
 
-  renderTasks() {
-    let filteredTasks = this.props.tasks;
-    if (this.state.hideCompleted) {
-      filteredTasks = filteredTasks.filter(task => !task.checked);
-    }
-    return filteredTasks.map((task) => (
-      <Task key={task._id} task={task} />
-    ));
+  renderProjects() {
+    //for every other render a project render a photo inbetween each project
+    return this.props.projects.map(function(project, index){
+      return <Photo key={index} />
+    });
   }
 
   render() {
     return (
       <div className="container">
         <header>
-          <h1>Todo List ({this.props.incompleteCount})</h1>
 
-          <label className="hide-completed">
-            <input type="checkbox" readOnly checked={this.state.hideCompleted} onClick={this.toggleHideCompleted.bind(this)} />
-            Hide Completed Tasks
-          </label>
-
-          <Accounts.ui.LoginForm />
-
-          { this.props.currentUser ?
-            <form className="new-task" onSubmit={this.handleSubmit.bind(this)} >
-              <input
-                type="text"
-                ref="textInput"
-                placeholder="Type to add new tasks"
-              />
-            </form> : ''
-          }
         </header>
 
         <ul>
-          {this.renderTasks()}
+          {this.renderProjects()}
         </ul>
+
+        <footer>
+          <form className="contact" onSubmit={this.handleSubmit.bind(this)} >
+              <input type="text" ref="emailInput" placeholder="John.Doe@example.com" />
+              <input type="text" ref="textInput" placeholder="This is a polite message with feedback." />
+          </form>
+        </footer>
       </div>
     );
   }
 }
 
 App.propTypes = {
-  tasks: PropTypes.array.isRequired,
-  incompleteCount: PropTypes.number.isRequired,
-  currentUser: PropTypes.object,
+  projects: PropTypes.array.isRequired,
+  // currentUser: PropTypes.object,
 };
 
 export default createContainer(() => {
-  Meteor.subscribe('tasks');
+  Meteor.subscribe('projects');
 
   return {
-    tasks: Tasks.find({}, { sort: { createdAt: -1 } }).fetch(),
-    incompleteCount: Tasks.find({ checked: { $ne: true } }).count(),
-    currentUser: Meteor.user(),
+    projects: Projects.find({}, { sort: { createdAt: -1 } }).fetch(),
+    // currentUser: Meteor.user(),
   };
 }, App);
