@@ -23,9 +23,10 @@ class App extends Component {
     const email = ReactDOM.findDOMNode(this.refs.emailInput).value.trim();
     const message = ReactDOM.findDOMNode(this.refs.textInput).value.trim();
 
-    Meteor.call('tasks.insert', text);
+    // Meteor.call('tasks.insert', text);
 
     // Clear form
+    ReactDOM.findDOMNode(this.refs.emailInput).value = '';
     ReactDOM.findDOMNode(this.refs.textInput).value = '';
   }
 
@@ -36,9 +37,10 @@ class App extends Component {
   }
 
   renderProjects() {
-    //for every other render a project render a photo inbetween each project
     return this.props.projects.map(function(project, index){
-      return <Photo key={index} />
+      return (<Project key={project.id} name={project.name} description={project.description} >
+              <Photo index={index}/>
+            </Project>);
     });
   }
 
@@ -46,14 +48,14 @@ class App extends Component {
     return (
       <div className="container">
         <header>
-
+          nav will be here
         </header>
 
         <ul>
           {this.renderProjects()}
         </ul>
 
-        <footer>
+        <footer className="section">
           <form className="contact" onSubmit={this.handleSubmit.bind(this)} >
               <input type="text" ref="emailInput" placeholder="John.Doe@example.com" />
               <input type="text" ref="textInput" placeholder="This is a polite message with feedback." />

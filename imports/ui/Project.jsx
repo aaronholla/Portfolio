@@ -5,16 +5,22 @@ export default class Project extends Component {
   //add check for logged in, allow edit and delete on projects if logged in
   render() {
     return (
-      <li className="project">
-        <h2>{this.props.project.name}</h2>
-        <span className="text">
-          <strong>{this.props.project.description}</strong>
-        </span>
+      <li>
+        <div className="section project">
+          <h2>{this.props.name}</h2>
+          <span className="text">
+            <strong>{this.props.description}</strong>
+          </span>
+        </div>
+        <div className="section photo">
+          {this.props.children}
+        </div>
       </li>
     );
   }
 }
 
 Project.propTypes = {
-  project: PropTypes.object.isRequired,
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired
 };
