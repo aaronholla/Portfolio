@@ -10,4 +10,4 @@ class Demo extends Component {
   }
 }
 
-export default Demo;
+export default Demo

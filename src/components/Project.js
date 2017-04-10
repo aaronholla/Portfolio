@@ -15,4 +15,4 @@ class Project extends Component {
   }
 }
 
-export default Project;
+export default Project
