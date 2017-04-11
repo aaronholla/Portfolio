@@ -1,0 +1,6 @@
+export {default as photo} from '../images/hero-bg.jpg'
+export {default as photo2} from '../images/hero-bg.jpg'
+export {default as photo3} from '../images/hero-bg.jpg'
+export {default as photo4} from '../images/hero-bg.jpg'
+export {default as photo5} from '../images/hero-bg.jpg'
+export {default as photo6} from '../images/hero-bg.jpg'

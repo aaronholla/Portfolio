@@ -1,16 +1,19 @@
 import React, { Component } from 'react'
 import { Parallax } from 'react-parallax'
-import photo from '../logo.svg'
+import * as photos from '../data/images'
 
 class Image extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      images: Object.keys(photos).map(key => photos[key])
+    }
+  }
+
   render() {
     return (
-        <li>
-          <Parallax bgImage={photo} strength={400}>
-            <br/>
-            <h1> some content that is displayed above the bgImage </h1>
-          </Parallax>
-        </li>
+      <Parallax bgImage={this.state.images[this.props.imageIndex]} strength={600}>
+      </Parallax>
     );
   }
 }

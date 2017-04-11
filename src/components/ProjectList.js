@@ -2,14 +2,23 @@ import React, { Component } from 'react'
 import Project from './Project'
 import Image from './Image'
 
+import projects from '../data/projects'
+
 class ProjectList extends Component {
+  constructor(props){
+    super(props);
+    this.state = projects
+  }
+
   render() {
     return (
         <div className="ProjectList">
           <ul>
-            {/* loop through projects */}
-            <Project name="test" description="This is a test project. This will eventually be real data that is pulled in. This will describe the project in detail."/>
-            <Image />
+            {this.state.projects.map((project, index) =>
+              <Project key={index} name={project.name} description={project.description}>
+                <Image key={index} imageIndex={index}/>
+              </Project>
+            )}
           </ul>
         </div>
     );

@@ -1,5 +1,4 @@
 body{
-  height: 2000px;
 }
 
 .App {
@@ -7,21 +6,25 @@ body{
 }
 
 .ProjectList {
-
+  padding-top:50vh;
 }
 
-.ProjectList ul {
+ul {
   list-style: none;
   padding: 0;
 }
 
-.ProjectList li {
+li {
   width: 100%;
-  height: 250px;
+  height: 50vh;
+}
+
+.react-parallax{
+  height:100%;
 }
 
 .Project{
-  background-color: rgb(49, 223, 108);
+  background-color: white;
   width: 60%;
   height: 100%;
   text-align: center;
@@ -32,11 +35,16 @@ body{
 .Demo{
   margin-left: 60%;
   height: 100%;
-  background-color: rgb(255, 168, 0);
+  background-color: white;
 }
 
-.App-header {
-  background-color: #222;
-  height: 50px;
-  color: white;
+.About {
+  background-image: linear-gradient(rgb(53, 154, 255), rgb(4, 7, 10) 85%);
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  z-index:-1;
 }

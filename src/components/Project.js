@@ -4,6 +4,7 @@ import Demo from './Demo.js'
 class Project extends Component {
   render() {
     return (
+      <ul>
         <li>
           <div className="Project">
             <h2>{this.props.name}</h2>
@@ -11,6 +12,10 @@ class Project extends Component {
           </div>
           <Demo name={this.props.name} />
         </li>
+        <li>
+          {this.props.children}
+        </li>
+      </ul>
     );
   }
 }
