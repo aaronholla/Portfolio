@@ -2,18 +2,30 @@ export default
 {
   projects: [{
               name:"Barrette Pricing" ,
-              description:"Barrette price lookup. This allows barrette store reps to lookup any price of any item that is sold."
+              description:"Pricing is a custom built PHP website for Lowes Home Improvement store representatives to search for pricing of products for specific stores.",
+              languages:["PHP","Javascript","HTML","CSS","MySql"],
+              languagesURL: "https://api.github.com/repos/aaronholla/alumi-guard-generator/languages",
+              frameworks:["JQuery","Bootstrap","bcrypt"]
             },
             {
               name:"Alumi-Guard Generator" ,
-              description:"This is a custom svg generator that loads a drawing of any standard Alumi-Guard panel."
+              description:"Generator is a pure JavaScript Electron application that dynamically generates SVG elements to create technical drawings of Alumi-Guard fence products.",
+              languages:["javascript","css"],
+              languagesURL: "https://api.github.com/repos/aaronholla/alumi-guard-generator/languages",
+              frameworks:["snapsvg","electron"]
             },
             {
-              name:"Bin of Parts" ,
-              description: "This is an inventory app for all FIRST Robotics parts."
+              name:"Rack Gate Calculator" ,
+              description: "Calculator is web form for verifying a critical dimension on Alumi-Guard Gates that are racked to follow an incline.",
+              languages:["Javascript","Objective-C"],
+              languagesURL: "https://api.github.com/repos/aaronholla/alumi-guard-generator/languages",
+              frameworks:["rails","JQuery","postgres","heroku"]
             },
             {
-              name:"Resize-Me" ,
-              description:"A safari extension that allows you to resize the window."
+              name:"Route Location Converter" ,
+              description:"Converter is a simple internal web form for turning fractional dimensions into a custom internal number system for use in manufacturing.",
+              languages:["javascript","css","HTML"],
+              languagesURL: "https://api.github.com/repos/aaronholla/alumi-guard-generator/languages",
+              frameworks:["safari-extension"]
             }]
 }

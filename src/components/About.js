@@ -6,8 +6,13 @@ class About extends Component {
       <div className="About">
         <ul>
           <li>
-            <h1>My name is Aaron Holland!</h1>
-            <p>This is a short bio about me.and all the things i can do and all my oassions and blah blah blah.</p>
+            <svg viewBox="0 0 500 800">
+                <linearGradient id="gr-simple" x1="0" y1="0" x2="100%" y2="100%">
+                    <stop stopColor="hsl(50, 100%, 70%)" offset="10%"/>
+                    <stop stopColor="hsl(320, 100%, 50%)" offset="90%"/>
+                </linearGradient>
+              <text textAnchor="middle" x="50%" y="50%" dy=".35em" className="text">Aaron Holland</text>
+            </svg>
           </li>
         </ul>
       </div>
