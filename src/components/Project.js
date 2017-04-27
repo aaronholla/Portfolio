@@ -32,18 +32,20 @@ class Project extends Component {
     return (
       <ul>
         <li>
+          <div className="ProjectName">{this.state.name}</div>
           <div className="Project">
-            <h2>{this.state.name}</h2>
-            <p>{this.state.description}</p>
-            <div className="languages">
-              <div className="languagnpe">
-                {this.state.languages.map((language, index) =>
-                      <div className="languageName" key={index}>{language}</div>
-                )}
+            <div className="ProjectInfo">
+              <p>{this.state.description}</p>
+              <div className="languages">
+                  {this.state.languages.map((language, index) =>
+                        <div className="languageName" key={index}>{language}</div>
+                  )}
               </div>
             </div>
+            <div className="Demo">
+              <Demo name={this.state.name} demoIndex={this.props.demoIndex}/>
+            </div>
           </div>
-          <Demo name={this.state.name} />
         </li>
         <li>
           {this.props.children}

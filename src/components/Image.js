@@ -12,7 +12,7 @@ class Image extends Component {
 
   render() {
     return (
-      <Parallax bgImage={this.state.images[this.props.imageIndex]} bgHeight='100vh' strength={600}>
+      <Parallax bgImage={this.state.images[this.props.imageIndex]} bgHeight='100vh' strength={500}>
       </Parallax>
     );
   }

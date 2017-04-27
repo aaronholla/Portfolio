@@ -8,8 +8,8 @@ class About extends Component {
           <li>
             <svg viewBox="0 0 500 800">
                 <linearGradient id="gr-simple" x1="0" y1="0" x2="100%" y2="100%">
-                    <stop stopColor="hsl(50, 100%, 70%)" offset="10%"/>
-                    <stop stopColor="hsl(320, 100%, 50%)" offset="90%"/>
+                    <stop stopColor="rgb(25, 255, 255)" offset="10%"/>
+                    <stop stopColor="rgb(0, 153, 224)" offset="90%"/>
                 </linearGradient>
               <text textAnchor="middle" x="50%" y="50%" dy=".35em" className="text">Aaron Holland</text>
             </svg>
