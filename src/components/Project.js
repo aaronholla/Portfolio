@@ -7,25 +7,8 @@ class Project extends Component {
     this.state = {
       name: props.name,
       description: props.description,
-      languages: props.languages,
-      languagesURL: props.languagesURL,
-      frameworks: props.frameworks
+      technologies: props.technologies
     }
-  }
-
-  componentDidMount(){
-         fetch(this.state.languagesURL)
-         .then( (response) => {
-           return response.json()
-         })
-         .then((languages)=>{
-           this.setState({
-              languages: languages
-           })
-         })
-         .catch( (ex) => {
-            console.log('parsing failed', ex)
-         })
   }
 
   render() {
@@ -36,9 +19,9 @@ class Project extends Component {
           <div className="Project">
             <div className="ProjectInfo">
               <p>{this.state.description}</p>
-              <div className="languages">
-                  {this.state.languages.map((language, index) =>
-                        <div className="languageName" key={index}>{language}</div>
+              <div className="technologies">
+                  {this.state.technologies.map((technology, index) =>
+                        <span className="technology" key={index}>{technology}</span>
                   )}
               </div>
             </div>
