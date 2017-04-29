@@ -25,7 +25,7 @@ class App extends Component {
     return (
       <div className="App">
         <About />
-        <div className="viewProjects"><a onClick={this.handleShowProjectClick}>View Projects</a></div>
+        <div className="viewProjects"><a unselectable="on" onClick={this.handleShowProjectClick}>View Projects</a></div>
         <ProjectList ref={input => this.projectsList = input}/>
       </div>
     );
