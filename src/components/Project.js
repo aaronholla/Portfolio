@@ -7,7 +7,8 @@ class Project extends Component {
     this.state = {
       name: props.name,
       description: props.description,
-      technologies: props.technologies
+      technologies: props.technologies,
+      githubURL: props.githubURL
     }
   }
 
@@ -18,6 +19,7 @@ class Project extends Component {
           <div className="ProjectName">{this.state.name}</div>
           <div className="Project">
             <div className="ProjectInfo">
+              <p>GitHub Repository: <a href={this.state.githubURL}>{this.state.githubURL}</a></p>
               <p>{this.state.description}</p>
               <div className="technologies">
                   {this.state.technologies.map((technology, index) =>
@@ -30,7 +32,7 @@ class Project extends Component {
             </div>
           </div>
         </li>
-        <li>
+        <li className="Image">
           {this.props.children}
         </li>
       </ul>
