@@ -176,6 +176,10 @@ svg {
 
     .DemoAnimation{
      margin: 0px auto;
+     width: 95%;
+     max-width: 800px; 
+     height: auto;
+     max-height: auto;
     }
 
     li {
