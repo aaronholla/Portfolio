@@ -13,12 +13,6 @@ export default
               githubURL:"https://github.com/aaronholla/alumi-guard-generator"
             },
             {
-              name:"Bin of Parts" ,
-              description:"An open source project to host a parts database and a mobile inventory management application for events.",
-              technologies:["HTML","CSS","Ruby","Rails","PHP","Javascript","Vagrant","Heroku","Objective-C"],
-              githubURL:"https://github.com/BinofParts"
-            },
-            {
               name:"Rack Gate Calculator" ,
               description: "Calculator is web form for verifying a critical dimension on Alumi-Guard Gates that are racked to follow an incline.",
               technologies:["HTML","Javascript","CSS","Cross-Browser"],
