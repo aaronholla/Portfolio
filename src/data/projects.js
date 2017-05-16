@@ -10,7 +10,7 @@ export default
               name:"Alumi-Guard Generator" ,
               description:"Generator is a pure JavaScript Electron application that dynamically generates SVG elements to create technical drawings of Alumi-Guard fence products.",
               technologies:["javascript","css","snapsvg","electron"],
-              githubURL:"https://github.com/aaronholla/alumi-guard-generator"
+              githubURL:"https://github.com/aaronholla/alumi-guard-generator/tree/Tests"
             },
             {
               name:"Rack Gate Calculator" ,

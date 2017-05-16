@@ -10,7 +10,7 @@ class About extends Component {
             <div className="name">
               <p>Hello, my name is Aaron Holland I am a web developer and a certified Solidworks Professional.
                 For the past two years, I have been working as a CAD Operator at Barrette Outdoor Living.
-                Barrette one of the largest manufacturers of fencing, railing and outdoor living products in the USA.
+                Barrette is one of the largest manufacturers of fencing, railing and outdoor living products in the USA.
                 While at Barrette I have improved my skills as a drafter and a web developer by attending training
                 courses and passing certification exams.</p>
 
