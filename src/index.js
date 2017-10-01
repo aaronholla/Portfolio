@@ -1,32 +1,19 @@
 require('smoothscroll-polyfill').polyfill();
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
+import 'normalize.css'
 import './index.css'
-import './App.css'
-import ProjectList from './components/ProjectList'
+import NavBar from './components/NavBar'
 import About from './components/About'
+import ProjectList from './components/ProjectList'
 
 class App extends Component {
-  constructor(props){
-    super(props)
-    this.handleShowProjectClick = this.handleShowProjectClick.bind(this)
-  }
-
-  componentDidMount(){
-
-  }
-
-  handleShowProjectClick() {
-    ReactDOM.findDOMNode(this.projectsList).scrollIntoView({block: "start", behavior: "smooth"});
-  }
-
-
   render() {
     return (
       <div className="App">
+        <NavBar />
         <About />
-        <div className="viewProjects"><a unselectable="on" onClick={this.handleShowProjectClick}>View Projects</a></div>
-        <ProjectList ref={input => this.projectsList = input}/>
+        <ProjectList />
       </div>
     );
   }

@@ -13,7 +13,7 @@ class Demo extends Component {
   render() {
     return (
       <div>
-        <img className="DemoAnimation" src={this.state.demos[this.props.demoIndex]} />
+        <img className="DemoAnimation" alt="Demo" src={this.state.demos[this.props.demoIndex]} />
       </div>
     );
   }

@@ -32,9 +32,6 @@ class Project extends Component {
             </div>
           </div>
         </li>
-        <li className="Image">
-          {this.props.children}
-        </li>
       </ul>
     );
   }
