@@ -1,39 +1,35 @@
-import React, { Component } from 'react'
-import Demo from './Demo.js'
+import React, { Component } from "react"
 
 class Project extends Component {
-  constructor(props){
-    super(props)
-    this.state = {
-      name: props.name,
-      description: props.description,
-      technologies: props.technologies,
-      githubURL: props.githubURL
-    }
-  }
-
   render() {
+    const { name, description, technologies, image, url } = this.props
     return (
-      <ul>
-        <li>
-          <div className="ProjectName">{this.state.name}</div>
-          <div className="Project">
-            <div className="ProjectInfo">
-              <p>GitHub Repository: <a href={this.state.githubURL}>{this.state.githubURL}</a></p>
-              <p>{this.state.description}</p>
-              <div className="technologies">
-                  {this.state.technologies.map((technology, index) =>
-                        <span className="technology" key={index}>{technology}</span>
-                  )}
-              </div>
-            </div>
-            <div className="Demo">
-              <Demo name={this.state.name} demoIndex={this.props.demoIndex}/>
+      <li>
+        <div className="Project">
+          <div className="ProjectInfo">
+            <div className="ProjectName">{name}</div>
+            {url && (
+              <p>
+                <a href={url} target="_blank">
+                  {url}
+                </a>
+              </p>
+            )}
+            {description && <p>{description}</p>}
+            <div className="technologies">
+              {technologies.map((technology, index) => (
+                <span className="technology" key={index}>
+                  {technology}
+                </span>
+              ))}
             </div>
           </div>
-        </li>
-      </ul>
-    );
+          <div className="Demo">
+            <img alt={name} src={image} />
+          </div>
+        </div>
+      </li>
+    )
   }
 }
 
