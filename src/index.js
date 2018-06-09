@@ -1,4 +1,3 @@
-require('smoothscroll-polyfill').polyfill();
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 import 'normalize.css'
